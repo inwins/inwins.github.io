@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>driver</title>
-<!-- 2018-03-09 周五 17:44 -->
+<!-- 2018-03-09 周五 18:52 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -298,13 +298,22 @@ TARGETTYPE=DRIVER
 SOURCES=first.c
 </pre>
 <p>
-在目录中执行build即可
+环境变量脚本
+</p>
+<pre class="example">
+set path=%path%;C:\WinDDK\7600.16385.1\bin
+set WNETBASE=C:\WinDDK\7600.16385.1
+setenv %WNETBASE% fre x64
+</pre>
+<p>
+<a href="http://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11800">ddk下载地址</a>
+安装好下载的ddk，先运行一下设置环境变量的脚本，在然后在代码目录中执行build命令即可
 </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2018-03-09 周五 17:44</p>
+<p class="date">Created: 2018-03-09 周五 18:52</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
