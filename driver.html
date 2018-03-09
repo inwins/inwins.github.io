@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>driver</title>
+<!-- 2018-03-09 周五 17:44 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">driver</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 编写windows驱动的教程</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 编写windows驱动的教程</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+程序代码
+头文件
+</p>
+<pre class="example">
+  /////////////////////////////////////////////////////////////////////////////
+//  文件名 : fitst.h
+//  工程 : first 
+//  作者 : enjoy5512   修改者 : enjoy5512   最后优化注释者 : enjoy5512
+//  个人技术博客 : blog.csdn.net/enjoy5512
+//  个人GitHub   : github.com/whu-enjoy
+//  描述 : 第一个驱动程序的头文件
+//  版本 : 最终确定版  完成日期 : 2016年7月5日 09:25:30
+//  修改 :
+//  参考文献 :
+//       &lt;&lt;Windows内核安全与驱动开发&gt;&gt; 谭文 陈铭霖 编著
+//////////////////////////////////////////////////////////////////////////////
+
+#ifndef __FIRST_H__
+#define __FIRST_H__
+
+
+//////////////////////////////////////////////////////////////////////////////
+//*= = 头文件声明
+//////////////////////////////////////////////////////////////////////////////
+#include &lt;ntddk.h&gt;
+
+//////////////////////////////////////////////////////////////////////////////
+//*= = 宏与结构体
+//////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+//*= = 函数声明
+//////////////////////////////////////////////////////////////////////////////
+NTSTATUS
+DriverEntry(
+    __in PDRIVER_OBJECT DriverObject,
+    __in PUNICODE_STRING RegistryPath
+    );
+
+VOID
+DriverUnload(
+    __in PDRIVER_OBJECT DriverObject
+    );
+
+#endif //End of __FIRST_H__
+</pre>
+<p>
+源文件
+</p>
+<pre class="example">
+/////////////////////////////////////////////////////////////////////////////
+//  文件名 : fitst.c
+//  工程 : first 
+//  作者 : enjoy5512   修改者 : enjoy5512   最后优化注释者 : enjoy5512
+//  个人技术博客 : blog.csdn.net/enjoy5512
+//  个人GitHub   : github.com/whu-enjoy
+//  描述 : 第一个驱动程序
+//  主要函数 :
+//      VOID DriverUnload(PDRIVER_OBJECT driver) 卸载函数
+//      NTSTATUS DriverEntry(PDRIVER_OBJECT driver, PUNICODE_STRING reg_path) 入口函数
+//  版本 : 最终确定版  完成日期 : 2016年7月5日 09:36:17
+//  修改 :
+//  参考文献 :
+//       &lt;&lt;Windows内核安全与驱动开发&gt;&gt; 谭文 陈铭霖 编著
+/////////////////////////////////////////////////////////////////////////////
+
+#include "first.h"
+
+//程序说明开始
+//==================================================================================
+//  功能 : 驱动程序入口函数
+//  参数 :    __in PDRIVER_OBJECT DriverObject, in PUNICODE_STRING RegistryPath
+//  (入口)  __in PDRIVER_OBJECT DriverObject  : 驱动对象
+//          __in PUNICODE_STRING RegistryPath : 驱动在注册表中的键值
+//  (出口)  无
+//  返回 :  NTSTATUS
+//  主要思路 : 先设置一个int3断点,然后输出一句话,设置卸载函数
+//  调用举例 : 
+//  日期 : 2016年7月5日 09:32:32
+//==================================================================================
+//程序说明结束
+NTSTATUS 
+DriverEntry(
+    __in PDRIVER_OBJECT DriverObject, 
+    __in PUNICODE_STRING RegistryPath
+    )
+{
+    #if DBG
+        _asm int 3
+    #endif
+
+    DbgPrint("first : hello ,load server!!\n");
+
+    DriverObject-&gt;DriverUnload = DriverUnload;
+
+    return STATUS_SUCCESS;
+}
+
+//程序说明开始
+//==================================================================================
+//  功能 : 驱动程序卸载
+//  参数 :    __in PDRIVER_OBJECT DriverObject
+//  (入口)  __in PDRIVER_OBJECT DriverObject  : 驱动对象
+//  (出口)  无
+//  返回 :  VOID
+//  主要思路 : 输出一句话
+//  调用举例 : 
+//  日期 : 2016年7月5日 09:35:59
+//==================================================================================
+//程序说明结束
+VOID 
+DriverUnload(
+    __in PDRIVER_OBJECT driver
+    )
+{
+    DbgPrint("firts:Our driver is unloading!!\r\n");
+}
+</pre>
+<p>
+makefile文件
+</p>
+<pre class="example">
+!IF 0
+
+Copyright (C) Microsoft Corporation, 1999 - 2002
+
+Module Name:
+
+    makefile.
+
+Notes:
+
+    DO NOT EDIT THIS FILE!!!  Edit .\sources. if you want to add a new source
+    file to this component.  This file merely indirects to the real make file
+    that is shared by all the components of Windows NT (DDK)
+
+!ENDIF
+
+!INCLUDE $(NTMAKEENV)\makefile.def
+</pre>
+<p>
+sources文件
+</p>
+<pre class="example">
+TARGETNAME=first
+TARGETTYPE=DRIVER
+SOURCES=first.c
+</pre>
+<p>
+在目录中执行build即可
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2018-03-09 周五 17:44</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
