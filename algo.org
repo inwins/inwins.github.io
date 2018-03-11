@@ -1,0 +1,118 @@
+* 算法导论
+** 算法入门
+*** 插入排序
+把数据分为两个部分，左边一个数据为有序数据范围是[0-i-1],右边是无序数据，范围是【i,n]，令j=i-1，从j开始数据进行比较，比j+1大就赋值给j+1，否则跳出，将i插入到j+1的位置（j最小值为0,但j最后的一次可能为-1）。
+#+BEGIN_SRC 
+#include <stdio.h>
+int insert_sort(int *a,int count)
+{
+  int i,j,key;
+  for(i=1;i<count;i++)
+  {
+   key=a[i];
+   for(j=i-1;j>=0;j--)
+   {
+     if(a[j]>key)
+       a[j+1]=a[j];
+     else
+       break;
+   }
+   a[j+1]=key;
+  }
+  return 0;
+}
+int main()
+{
+  int i,a[]={1,3,6,2,4,7,9};
+  insert_sort(a,sizeof(a)/sizeof(int));
+  for(i=0;i<sizeof(a)/sizeof(int);i++)
+   printf(" %d",a[i]);
+  return 0;
+}
+
+
+#+END_SRC
+**** 递归迭代与递归
+递归和迭代都是重复调用的表述，都是循环的一种。
+递归是函数重复调用函数自身，最终达到结束条件，将所有的小问题结果逐步合并为问题结果。
+迭代是上一次循环的结果作为下一次循环的变量的一种循环。
+**** 循环不变式
+循环不变式是将一个循环迭代的过程分解为3步，用来证明算法的正确性
+初始化，第一次开始迭代的时候是正确的
+保持：开始迭代的时候正确，迭代结束的时候也正确
+终止：循环结束时，不变式给了我们一个性质，有助于保证算法是正确的。
+不变式的前两步的结果是保证循环的正确性，后面的一个性质证明算法的正确性。
+*** 算法分析
+插入排序采用的方法是增量法，在有序的数组中将数据插入。还有另外一种方法叫做分治法，
+**** 分治法
+***** 递归分解
+将问题划分为子问题，子问题和原问题一样只是规模更小，当子问题足够小时就直接求解，将子问题的解合并构成原问题的解
+有很多问题可以采用递归的思路解决：这些方法通常采用分治策略，
+1分解：将问题分解为同样的小规模问题，
+2解决：直到问题足够小就解决掉，
+3合并：合并问题的解，就得到原问题的解。
+#+BEGIN_SRC 
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int merge_sort(int *a,int count)
+{
+  int i,j,k,m,tmp;
+  int *b=NULL;
+//  printf("count=%d ",count);
+//  for(i=0;i<count;i++)
+//  printf("%d ",a[i]);
+//  puts("\n");
+  if(count>1)
+  {
+    i=count/2;
+    merge_sort(a,i);
+    merge_sort(a+i,count-i);
+    b=(int*)malloc(count);
+    if(!b)
+       exit(1);
+    for(j=0,k=0,m=i;j<count;)
+    {
+//       for(tmp=0;tmp<count;tmp++)
+//         printf("a[%d]=%d ",tmp,a[tmp]);
+//       puts("\n");
+       if(a[k]<=a[m])
+       {
+           b[j++]=a[k++];
+           if(k>=i)
+              break;
+       }
+       else
+       {
+           b[j++]=a[m++];
+           if(m>=count)
+              break;
+       }
+    }
+    if(k>=i)
+        memcpy(b+j,a+m,(count-m)*4);
+    else
+        memcpy(b+j,a+k,(i-k)*4);
+//    for(tmp=0;tmp<count;tmp++)
+//       printf("b[%d]=%d ",tmp,b[tmp]);
+//       puts("\n");
+    memcpy(a,b,count*4);
+    free(b);
+  }
+  return 0;
+}
+int main()
+{
+  int i,a[]={1,3,6,2,4,7,9};
+  insert_sort(a,sizeof(a)/sizeof(int));
+  for(i=0;i<sizeof(a)/sizeof(int);i++)
+   printf(" %d",a[i]);
+  return 0;
+}
+#+END_SRC
+书中合并的代码是独立的，其中合并两个有序串的时间代价是O(n),其中n是需要合并的元素个数，因为n个元素最多需要n次比较。
+**** 分治法分析
+递归算法的时间复杂度可以写成一个递归的式子。将归并排序的算法展开为一棵树，树高lgn，每一层时间为cn，总的时间复杂度为O(nlgn)
+** 函数的增长
+对于不是很小的输入规模的问题，我们一般关注问题的渐进效率，也就是关心算法运行时间是怎样随输入规模的增长而增长的。
+*** 渐进符号
