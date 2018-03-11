@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>algo</title>
-<!-- 2018-03-11 日 23:53 -->
+<!-- 2018-03-12 一 00:26 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="bochs" />
@@ -234,6 +234,7 @@ int main()
 1分解：将问题分解为同样的小规模问题，
 2解决：直到问题足够小就解决掉，
 3合并：合并问题的解，就得到原问题的解。
+下面是实现的基于递归方法的归并排序函数。
 </p>
 <pre class="example">
 #include &lt;stdio.h&gt;
@@ -302,7 +303,7 @@ int main()
 </li>
 <li><a id="sec-1-1-2-2" name="sec-1-1-2-2"></a>分治法分析<br  /><div class="outline-text-5" id="text-1-1-2-2">
 <p>
-递归算法的时间复杂度可以写成一个递归的式子。将归并排序的算法展开为一棵树，树高lgn，每一层时间为cn，总的时间复杂度为O(nlgn)
+递归算法的时间复杂度可以写成一个递归的式子。将归并排序的算法一步步的展开为一棵树，树高lgn，每一层时间为cn，总的时间复杂度为O(nlgn)
 </p>
 </div>
 </li></ol>
@@ -323,7 +324,7 @@ int main()
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: bochs</p>
-<p class="date">Created: 2018-03-11 日 23:53</p>
+<p class="date">Created: 2018-03-12 一 00:26</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
