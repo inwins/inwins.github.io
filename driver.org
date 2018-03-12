@@ -1,5 +1,5 @@
 #+AUTHOR:
-* 编写windows驱动的教程
+* 第一个windows驱动
 程序代码
 头文件
 #+BEGIN_SRC 
@@ -153,3 +153,16 @@ setenv %WNETBASE% fre x64
 #+END_SRC
  [[http://www.microsoft.com/en-us/download/details.aspx?displaylang%3Den&id%3D11800][ddk下载地址]]
 安装好下载的ddk，先运行一下设置环境变量的脚本，在然后在代码目录中执行build命令即可
+* 驱动的安装
+ usb设备的vid&pid表[[http://www.linux-usb.org/usb.ids][Linux-usb-id表]]。
+ 驱动的是根据inf文件的描述执行安装的，其中我们一般调用devcon.exe或dpinst.exe进行安装。
+ 可以采用如下的命令，注意devcon程序是32还是64位的，
+ 首先需要生成cat文件，使用inf2cat文件，就能够生成cat文件，驱动就可以安装了
+ 执行完后可以检查日志文件，
+C:\Windows\inf\setupapi.dev.log，是否在哪里出现安装错误
+#+BEGIN_SRC 
+Inf2Cat /driver:PackagePath /os:WindowsVersionList [/nocat] [/verbose] [/?] [other switches]
+devcon -r rescan emul.inf "USB\VID_20B1&PID_0002&MI_00"
+devcon -r update emul.inf "USB\VID_20B1&PID_0002&MI_00"
+
+#+END_SRC
