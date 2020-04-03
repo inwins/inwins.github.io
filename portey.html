@@ -1,0 +1,3516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-04-03 五 21:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>古诗文</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="inwins" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">古诗文</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf703875">1. 劝学惜时篇</a>
+<ul>
+<li><a href="#org1680188">1.1. 劝学 颜真卿</a></li>
+<li><a href="#org65db923">1.2. 劝学诗 / 偶成  朱熹</a></li>
+<li><a href="#org77aca08">1.3. 劝学 孟郊</a></li>
+<li><a href="#org243c02a">1.4. 金缕衣 无名氏</a></li>
+<li><a href="#orgc2450d1">1.5. 冬夜读书示子聿 陆游</a></li>
+<li><a href="#org0fa74ae">1.6. 杂诗 陶渊明</a></li>
+<li><a href="#org2cda2e9">1.7. 劝学 荀子</a></li>
+<li><a href="#orgf03aa55">1.8. 送东阳马生序(节选) 宋濂</a></li>
+<li><a href="#orgc423c40">1.9. 孙权劝学 司马光</a></li>
+<li><a href="#org6e189cd">1.10. 论语十二章</a></li>
+<li><a href="#org201fbae">1.11. 师说 韩愈</a></li>
+<li><a href="#org505e408">1.12. 杂说四·马说 韩愈</a></li>
+<li><a href="#org6213759">1.13. 进学解 韩愈</a></li>
+<li><a href="#org6a2aedf">1.14. 诫子书 诸葛亮</a></li>
+<li><a href="#orgba4bb72">1.15. 原毁 韩愈</a></li>
+<li><a href="#orged3cc67">1.16. 唐多令·芦叶满汀洲 刘过</a></li>
+</ul>
+</li>
+<li><a href="#orgcefd54b">2. 志气意趣篇</a>
+<ul>
+<li><a href="#orgcacf820">2.1. 行路难·其一 李白</a></li>
+<li><a href="#org8d3af93">2.2. 望岳 杜甫</a></li>
+<li><a href="#org0a8c369">2.3. 夏日绝句 李清照</a></li>
+<li><a href="#org68b0e93">2.4. 梅花 王安石</a></li>
+<li><a href="#org3d5a262">2.5. 登飞来峰 王安石</a></li>
+<li><a href="#org5235ec7">2.6. 书愤五首·其一 陆游</a></li>
+<li><a href="#org43d41c2">2.7. 与诸子登岘山 孟浩然</a></li>
+<li><a href="#org3d6c92d">2.8. 陋室铭 刘禹锡</a></li>
+<li><a href="#org51b8d40">2.9. 五柳先生传 陶渊明</a></li>
+<li><a href="#orgaaf2031">2.10. 饮酒·其五 陶渊明</a></li>
+<li><a href="#orgcbc132f">2.11. 归园田居·其一 陶渊明</a></li>
+<li><a href="#orgd87d2fe">2.12. 归园田居·其三 陶渊明</a></li>
+<li><a href="#orgb6d2993">2.13. 与诸子登岘山 孟浩然</a></li>
+<li><a href="#org4fee0b7">2.14. 登飞来峰 王安石</a></li>
+</ul>
+</li>
+<li><a href="#orgb2ea3a7">3. 悯农爱民篇</a>
+<ul>
+<li><a href="#orgb0af076">3.1. 观刈麦 白居易</a></li>
+<li><a href="#orgf7be67e">3.2. 悯农二首 李绅</a></li>
+<li><a href="#org6ab9537">3.3. 赤日炎炎似火烧 无名氏</a></li>
+</ul>
+</li>
+<li><a href="#org2809b18">4. 思乡念亲篇</a>
+<ul>
+<li><a href="#orge758ac9">4.1. 静夜思 李白</a></li>
+<li><a href="#org16171b5">4.2. 泊船瓜洲 王安石</a></li>
+<li><a href="#orga7a5ff1">4.3. 逢入京使 岑参</a></li>
+<li><a href="#orgfb1b689">4.4. 八声甘州·对潇潇暮雨洒江天 柳永</a></li>
+</ul>
+</li>
+<li><a href="#orga8da96b">5. 爱情篇</a>
+<ul>
+<li><a href="#org87b931d">5.1. 鹊桥仙·纤云弄巧 秦观</a></li>
+<li><a href="#orgaac3281">5.2. 钗头凤·红酥手 陆游</a></li>
+<li><a href="#org4a098f0">5.3. 钗头凤·世情薄 唐婉</a></li>
+<li><a href="#org39f1472">5.4. 离思五首·其四 元稹</a></li>
+<li><a href="#org70b86f5">5.5. 卜算子·我住长江头 李之仪</a></li>
+<li><a href="#org330cc72">5.6. 上邪</a></li>
+<li><a href="#orgba92de7">5.7. 千秋岁·数声鶗鴂 张先</a></li>
+<li><a href="#org5a47395">5.8. 白头吟 卓文君</a></li>
+<li><a href="#orgaa0a0ef">5.9. 浣溪沙·谁念西风独自凉 纳兰性德</a></li>
+<li><a href="#orga53be88">5.10. 生查子·元夕 欧阳修</a></li>
+<li><a href="#orgee51b01">5.11. 江城子·乙卯正月二十日夜记梦 苏轼</a></li>
+<li><a href="#orgeb50182">5.12. 子衿 佚名</a></li>
+<li><a href="#orged65f54">5.13. 蝶恋花·伫倚危楼风细细 柳永</a></li>
+<li><a href="#org207dcce">5.14. 迢迢牵牛星 佚名</a></li>
+<li><a href="#orgaa3cbaa">5.15. 摸鱼儿·雁丘词 / 迈陂塘·雁丘词 元好问</a></li>
+<li><a href="#orga4bd23c">5.16. 玉楼春·春恨 晏殊</a></li>
+<li><a href="#org8a7fc32">5.17. 题都城南庄 崔护</a></li>
+<li><a href="#org5c64f85">5.18. 折桂令·春情 徐再思</a></li>
+<li><a href="#org1cc003f">5.19. 绮怀十六首·其十五  清代：黄景仁</a></li>
+<li><a href="#org2bad3a0">5.20. 赠邻女 / 寄李亿员外 鱼玄机</a></li>
+<li><a href="#org2949ae9">5.21. 谢池春·残寒销尽  宋 李之仪</a></li>
+<li><a href="#org4bbd522">5.22. 长干行二首 李白</a></li>
+<li><a href="#org58fe3d5">5.23. 春日行 鲍照</a></li>
+<li><a href="#orgc634c6d">5.24. 无题 李商隐</a></li>
+<li><a href="#orgf4fea7a">5.25. 无题·昨夜星辰昨夜风 李商隐</a></li>
+<li><a href="#org5f947dc">5.26. 无题·飒飒东风细雨来 李商隐</a></li>
+<li><a href="#orgad0fb3c">5.27. 越人歌</a></li>
+<li><a href="#org8ee58af">5.28. 浪淘沙·借问江潮与海水 白居易</a></li>
+<li><a href="#orge7707cf">5.29. 诀别书 卓文君</a></li>
+<li><a href="#org340a5b5">5.30. 无题四首 李商隐</a></li>
+<li><a href="#orga6f40eb">5.31. 凤求凰 司马相如</a></li>
+<li><a href="#orgeca9a48">5.32. 马嵬·其二 李商隐</a></li>
+<li><a href="#orgf378c32">5.33. 孔雀东南飞并序 / 古诗为焦仲卿妻作</a></li>
+<li><a href="#org6ce5997">5.34. 长恨歌 白居易</a></li>
+<li><a href="#org8c38f8a">5.35. 鹧鸪天·彩袖殷勤捧玉钟 晏几道</a></li>
+<li><a href="#org6531341">5.36. 青玉案·凌波不过横塘路 贺铸</a></li>
+<li><a href="#org2d68ca3">5.37. 竹枝词二首·其一 刘禹锡</a></li>
+<li><a href="#org6b8bd2b">5.38. 鬓云松令·枕函香 纳兰性德</a></li>
+<li><a href="#orgf510757">5.39. 采桑子·谁翻乐府凄凉曲 纳兰性德</a></li>
+<li><a href="#org8763443">5.40. 虞美人·银床淅沥青梧老 纳兰性德</a></li>
+<li><a href="#org49f00b1">5.41. 采桑子·而今才道当时错 纳兰性德</a></li>
+<li><a href="#org1127a5a">5.42. 浣溪沙·闺情 李清照</a></li>
+<li><a href="#org5bd2dcf">5.43. 寄人 张泌</a></li>
+<li><a href="#orga375fcd">5.44. 有所思</a></li>
+<li><a href="#org1309a09">5.45. 古相思曲·其一</a></li>
+<li><a href="#orgcc5fe3a">5.46. 长亭送别 王实甫</a></li>
+<li><a href="#orgc1262c8">5.47. 洛神赋 曹植</a></li>
+<li><a href="#org98ca276">5.48. 和项王歌 虞姬</a></li>
+</ul>
+</li>
+<li><a href="#org7d737c3">6. 主席诗词</a>
+<ul>
+<li><a href="#org4466363">6.1. 金猴奋起千钧棒</a></li>
+<li><a href="#org70677d7">6.2. 恰同学少年</a></li>
+<li><a href="#orgd090351">6.3. 湘江北去，橘子洲头</a></li>
+<li><a href="#org82b5c40">6.4. 雄关漫道真如铁，而今迈步从头越</a></li>
+<li><a href="#org9875b02">6.5. 七律.长征</a></li>
+<li><a href="#org0daddb7">6.6. 数风流人物，还看今朝</a></li>
+<li><a href="#org35a0bb9">6.7. 蚂蚁缘槐夸大国，蚍蜉撼树谈何易</a></li>
+<li><a href="#org72a0bb3">6.8. 今日长缨在手，何时缚住苍龙</a></li>
+<li><a href="#orga0a10f3">6.9. 一年一度秋风劲，不是春光，胜似春光，战地黄花分外香</a></li>
+<li><a href="#orga5456e6">6.10. 为有牺牲多壮志，敢叫日月换新天</a></li>
+<li><a href="#org949141b">6.11. 世上无难事，只要肯登攀</a></li>
+<li><a href="#org54a9e8c">6.12. 神女应无恙，当惊世界殊</a></li>
+<li><a href="#orgc3715fb">6.13. 牢骚太盛防肠断，风物长宜放眼量</a></li>
+<li><a href="#org7b3a66e">6.14. 天若有情天亦老，人间正道是沧桑</a></li>
+<li><a href="#org62b0adb">6.15. 中华儿女多奇志，不爱红装爱武装</a></li>
+</ul>
+</li>
+<li><a href="#orgb5737b8">7. 离骚 屈原，帝高阳之苗裔兮</a></li>
+<li><a href="#org0180d9c">8. 逍遥游庄子</a></li>
+<li><a href="#org0aca0a7">9. 诗经</a></li>
+<li><a href="#orgd9bf191">10. 吾善养吾浩然之气</a></li>
+<li><a href="#orgf2939a7">11. 青出于蓝而青于蓝，冰水为之而寒于水</a></li>
+<li><a href="#orgbd67fa0">12. 孙子兵法 孙武</a></li>
+<li><a href="#org830f006">13. 史记司马迁</a></li>
+<li><a href="#org8693fe9">14. 淮南子塞翁失马</a></li>
+<li><a href="#orgd6749a3">15. 战国策</a></li>
+<li><a href="#org67d054a">16. 过秦论贾谊</a></li>
+<li><a href="#orgf5a9b53">17. 吕氏春秋</a></li>
+<li><a href="#org8aeaf95">18. 郑伯克段于焉</a></li>
+<li><a href="#org615e781">19. 罄南山之竹书罪无穷，绝东海之波流恶难尽</a></li>
+<li><a href="#org5b777dc">20. 大风歌大风起兮云飞扬</a></li>
+<li><a href="#org1e25e55">21. 孔雀东南飞，五里一徘徊</a></li>
+<li><a href="#orga7d4be2">22. 力拔山兮气盖世</a></li>
+<li><a href="#orge69000b">23. 终南阴岭秀</a></li>
+<li><a href="#org42d310f">24. 将军百战死，壮士十年归</a></li>
+<li><a href="#org6562a23">25. 短歌行曹操对酒当歌，人生几何</a></li>
+<li><a href="#orgb365b1d">26. 神龟虽寿，犹有竟时</a></li>
+<li><a href="#orgc918c77">27. 东临碣石，以观沧海水何澹澹山岛耸峙</a></li>
+<li><a href="#org3a41dfa">28. 白骨露于野，千里无鸡鸣</a></li>
+<li><a href="#org0dc3068">29. 捐躯赴国难，视死忽如归</a></li>
+<li><a href="#org2988782">30. 洛神赋</a></li>
+<li><a href="#org9e9ca90">31. 煮豆燃豆萁，豆在釜中泣</a></li>
+<li><a href="#orgb1324b6">32. 明月皎皎照我床，星汉西流夜未央</a></li>
+<li><a href="#orgd4e160b">33. 出师表诸葛亮</a></li>
+<li><a href="#org3194aea">34. 后出师表诸葛亮</a></li>
+<li><a href="#org8af82d4">35. 诫子书诸葛亮</a></li>
+<li><a href="#org7391d67">36. 兰亭集序王羲之</a></li>
+<li><a href="#org349fcff">37. 陶渊明五柳先生传</a></li>
+<li><a href="#org7f7ba64">38. 爱莲说周敦颐</a></li>
+<li><a href="#org7410e37">39. 初唐四杰陈子昂，王勃，骆宾王，卢照邻</a></li>
+<li><a href="#org15c0c46">40. 张九龄 海上生明月，天涯共此时</a></li>
+<li><a href="#org5238a77">41. 长安一片月，万户捣衣声</a></li>
+<li><a href="#org83e017e">42. 孟浩然</a></li>
+<li><a href="#org867c9fd">43. 王维</a></li>
+<li><a href="#org75ece29">44. 游子吟孟郊</a></li>
+<li><a href="#org001168e">45. 代悲白头翁 刘希夷</a></li>
+<li><a href="#orgfcf8058">46. 春江花月夜 张若虚</a></li>
+<li><a href="#org91e49e2">47. 访隐者不遇贾岛</a></li>
+<li><a href="#orgb498ded">48. 刘禹锡</a></li>
+<li><a href="#orgb3e2f6d">49. 静夜思李白</a></li>
+<li><a href="#org3076e63">50. 杜甫</a></li>
+<li><a href="#orgc66a92f">51. 岑参</a></li>
+<li><a href="#orgc044d9b">52. 贾岛</a></li>
+<li><a href="#orgf4ae54d">53. 青海长云暗雪山，孤城遥望玉门关</a></li>
+<li><a href="#orgf97a922">54. 李商隐杜牧</a></li>
+<li><a href="#org829bf94">55. 李贺</a></li>
+<li><a href="#org898433d">56. 周敦颐 爱莲说</a></li>
+<li><a href="#org2ceae24">57. 长笛一声人倚楼</a></li>
+<li><a href="#org59b28cb">58. 白居易</a></li>
+<li><a href="#orgb5dd2b3">59. 元稹</a></li>
+<li><a href="#org10afe8d">60. 韩愈</a></li>
+<li><a href="#orgb00b449">61. 冯延巳</a></li>
+<li><a href="#org00fa822">62. 李煜</a></li>
+<li><a href="#org809337a">63. 欧阳修</a></li>
+<li><a href="#orga4262d5">64. 王安石</a></li>
+<li><a href="#orgf745298">65. 二晏</a></li>
+<li><a href="#org065bf4d">66. 贺铸</a></li>
+<li><a href="#org9a97ab9">67. 柳永</a></li>
+<li><a href="#orgc245a13">68. 三苏</a></li>
+<li><a href="#org611f9ea">69. 岳飞</a></li>
+<li><a href="#org8e841f6">70. 辛弃疾</a></li>
+<li><a href="#orgd18cbcc">71. 李清照</a></li>
+<li><a href="#org111d171">72. 周邦彦</a></li>
+<li><a href="#org156c365">73. 姜夔</a></li>
+<li><a href="#org31a322a">74. 陆游</a></li>
+<li><a href="#orgaeabe2e">75. 秦观</a>
+<ul>
+<li><a href="#org4cc1d1e">75.1. 鹊桥仙</a></li>
+<li><a href="#org3fff2e8">75.2. 减字木兰花·天涯旧恨</a></li>
+</ul>
+</li>
+<li><a href="#org7d2c67c">76. 黄庭坚</a></li>
+<li><a href="#org8adb503">77. 范成大</a></li>
+<li><a href="#org1038958">78. 范仲淹</a></li>
+<li><a href="#org8b5a4c7">79. 柳永</a></li>
+<li><a href="#org4d31c2a">80. 张先</a></li>
+<li><a href="#orgf0fff40">81. 文天祥</a></li>
+<li><a href="#org33ec105">82. 张养浩</a></li>
+<li><a href="#org6e88748">83. 马致远</a></li>
+<li><a href="#orgb1dc0d5">84. 元好问</a></li>
+<li><a href="#org89b0468">85. 于谦</a></li>
+<li><a href="#org5b228ed">86. 唐伯虎</a></li>
+<li><a href="#org8e5e998">87. 邓板桥</a></li>
+<li><a href="#org140d6da">88. 纳兰容若</a></li>
+<li><a href="#org4882a3b">89. 龚自珍</a></li>
+<li><a href="#org3e69d43">90. 鲁迅</a></li>
+<li><a href="#org3cc7eec">91. 袁枚</a></li>
+<li><a href="#org4b35941">92. 梁启超</a></li>
+<li><a href="#org9643f3d">93. 最是人间留不住，朱颜辞镜花辞树</a></li>
+<li><a href="#org470dbd5">94. 陈毅</a></li>
+<li><a href="#org556d60f">95. 还君明珠双泪垂，恨不相逢未嫁时</a></li>
+<li><a href="#org015457e">96. 书卷多情似故人，晨昏忧乐每相亲</a></li>
+<li><a href="#org83435a5">97. 苦恨年年压金线，为他人作嫁衣裳</a></li>
+<li><a href="#org1c71ff0">98. 水经注 郦道元</a></li>
+<li><a href="#org8cc8448">99. 与朱元思书</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf703875" class="outline-2">
+<h2 id="orgf703875"><span class="section-number-2">1</span> 劝学惜时篇</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org1680188" class="outline-3">
+<h3 id="org1680188"><span class="section-number-3">1.1</span> 劝学 颜真卿</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+三更灯火五更鸡，正是男儿读书时。
+</p>
+
+<p>
+黑发不知勤学早，白首方悔读书迟。
+</p>
+</div>
+</div>
+<div id="outline-container-org65db923" class="outline-3">
+<h3 id="org65db923"><span class="section-number-3">1.2</span> 劝学诗 / 偶成  朱熹</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+少年易老学难成，一寸光阴不可轻。
+</p>
+
+<p>
+未觉池塘春草梦，阶前梧叶已秋声。
+</p>
+</div>
+</div>
+<div id="outline-container-org77aca08" class="outline-3">
+<h3 id="org77aca08"><span class="section-number-3">1.3</span> 劝学 孟郊</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+击石乃有火，不击元无烟。
+</p>
+
+<p>
+人学始知道，不学非自然。
+</p>
+
+<p>
+万事须己运，他得非我贤。
+</p>
+
+<p>
+青春须早为，岂能长少年。
+</p>
+</div>
+</div>
+<div id="outline-container-org243c02a" class="outline-3">
+<h3 id="org243c02a"><span class="section-number-3">1.4</span> 金缕衣 无名氏</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+劝君莫惜金缕衣，劝君惜取少年时。
+花开堪折直需折，莫待无花空折枝。
+</p>
+</div>
+</div>
+<div id="outline-container-orgc2450d1" class="outline-3">
+<h3 id="orgc2450d1"><span class="section-number-3">1.5</span> 冬夜读书示子聿 陆游</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+古人学问无遗力，少壮工夫老始成。
+</p>
+
+<p>
+纸上得来终觉浅，绝知此事要躬行。
+</p>
+</div>
+</div>
+<div id="outline-container-org0fa74ae" class="outline-3">
+<h3 id="org0fa74ae"><span class="section-number-3">1.6</span> 杂诗 陶渊明</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+人生无根蒂，飘如陌上尘。
+</p>
+
+<p>
+分散逐风转，此已非常身。
+</p>
+
+<p>
+落地为兄弟，何必骨肉亲！
+</p>
+
+<p>
+得欢当作乐，斗酒聚比邻。
+</p>
+
+<p>
+盛年不重来，一日难再晨。
+</p>
+
+<p>
+及时当勉励，岁月不待人。
+</p>
+</div>
+</div>
+<div id="outline-container-org2cda2e9" class="outline-3">
+<h3 id="org2cda2e9"><span class="section-number-3">1.7</span> 劝学 荀子</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+君子曰：学不可以已。
+</p>
+
+<p>
+青，取之于蓝，而青于蓝；冰，水为之而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴，不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。
+</p>
+
+<p>
+故不登高山，不知天之高也；不临深溪，不知地之厚也；不闻先王之遗言，不知学问之大也。干、越、夷、貉之子，生而同声，长而异俗，教使之然也。诗曰：“嗟尔君子，无恒安息。靖共尔位，好是正直。神之听之，介尔景福。”神莫大于化道，福莫长于无祸。
+</p>
+
+<p>
+吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不如登高之博见也。登高而招，臂非加长也，而见者远；顺风而呼，声非加疾也，而闻者彰。假舆马者，非利足也，而致千里；假舟楫者，非能水也，而绝江河。君子生非异也，善假于物也。(君子生 通：性)
+</p>
+
+<p>
+南方有鸟焉，名曰蒙鸠，以羽为巢，而编之以发，系之苇苕，风至苕折，卵破子死。巢非不完也，所系者然也。西方有木焉，名曰射干，茎长四寸，生于高山之上，而临百仞之渊，木茎非能长也，所立者然也。蓬生麻中，不扶而直；白沙在涅，与之俱黑。兰槐之根是为芷，其渐之滫，君子不近，庶人不服。其质非不美也，所渐者然也。故君子居必择乡，游必就士，所以防邪辟而近中正也。
+</p>
+
+<p>
+物类之起，必有所始。荣辱之来，必象其德。肉腐出虫，鱼枯生蠹。怠慢忘身，祸灾乃作。强自取柱，柔自取束。邪秽在身，怨之所构。施薪若一，火就燥也，平地若一，水就湿也。草木畴生，禽兽群焉，物各从其类也。是故质的张，而弓矢至焉；林木茂，而斧斤至焉；树成荫，而众鸟息焉。醯酸，而蚋聚焉。故言有招祸也，行有招辱也，君子慎其所立乎！
+</p>
+
+<p>
+积土成山，风雨兴焉；积水成渊，蛟龙生焉；积善成德，而神明自得，圣心备焉。故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽木不折；锲而不舍，金石可镂。蚓无爪牙之利，筋骨之强，上食埃土，下饮黄泉，用心一也。蟹六跪而二螯，非蛇鳝之穴无可寄托者，用心躁也。
+</p>
+</div>
+</div>
+<div id="outline-container-orgf03aa55" class="outline-3">
+<h3 id="orgf03aa55"><span class="section-number-3">1.8</span> 送东阳马生序(节选) 宋濂</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+余幼时即嗜学。家贫，无从致书以观，每假借于藏书之家，手自笔录，计日以还。天大寒，砚冰坚，手指不可屈伸，弗之怠。录毕，走送之，不敢稍逾约。以是人多以书假余，余因得遍观群书。既加冠，益慕圣贤之道，又患无硕师、名人与游，尝趋百里外，从乡之先达执经叩问。先达德隆望尊，门人弟子填其室，未尝稍降辞色。余立侍左右，援疑质理，俯身倾耳以请；或遇其叱咄，色愈恭，礼愈至，不敢出一言以复；俟其欣悦，则又请焉。故余虽愚，卒获有所闻。
+</p>
+
+<p>
+当余之从师也，负箧曳屣，行深山巨谷中，穷冬烈风，大雪深数尺，足肤皲裂而不知。至舍，四支僵劲不能动，媵人持汤沃灌，以衾拥覆，久而乃和。寓逆旅，主人日再食，无鲜肥滋味之享。同舍生皆被绮绣，戴朱缨宝饰之帽，腰白玉之环，左佩刀，右备容臭，烨然若神人；余则缊袍敝衣处其间，略无慕艳意,以中有足乐者，不知口体之奉不若人也。盖余之勤且艰若此。
+</p>
+</div>
+</div>
+<div id="outline-container-orgc423c40" class="outline-3">
+<h3 id="orgc423c40"><span class="section-number-3">1.9</span> 孙权劝学 司马光</h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+初，权谓吕蒙曰：“卿今当涂掌事，不可不学！”蒙辞以军中多务。权曰：“孤岂欲卿治经为博士邪?但当涉猎，见往事耳。卿言多务，孰若孤？孤常读书，自以为大有所益。”蒙乃始就学。
+</p>
+
+<p>
+及鲁肃过寻阳，与蒙论议，大惊曰：“卿今者才略，非复吴下阿蒙！”蒙曰：“士别三日，即更刮目相待，大兄何见事之晚乎！”肃遂拜蒙母，结友而别。
+</p>
+</div>
+</div>
+<div id="outline-container-org6e189cd" class="outline-3">
+<h3 id="org6e189cd"><span class="section-number-3">1.10</span> 论语十二章</h3>
+<div class="outline-text-3" id="text-1-10">
+<p>
+子曰：“学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？”《学而》
+</p>
+
+<p>
+曾子曰：“吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”《学而》
+</p>
+
+<p>
+子曰：“吾十有五而志于学，三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲，不逾矩。”《为政》
+</p>
+
+<p>
+子曰：“温故而知新，可以为师矣。”《为政》
+</p>
+
+<p>
+子曰：“学而不思则罔，思而不学则殆。”《为政》
+</p>
+
+<p>
+子曰：“贤哉，回也！一箪食，一瓢饮，在陋巷，人不堪其忧，回也不改其乐。贤哉，回也！”《雍也》
+</p>
+
+<p>
+子曰：“知之者不如好之者，好之者不如乐之者。”《雍也》
+</p>
+
+<p>
+子曰：“饭疏食，饮水，曲肱而枕之，乐亦在其中矣。不义而富且贵，于我如浮云。”《述而》
+</p>
+
+<p>
+子曰：“三人行，必有我师焉。择其善者而从之，其不善者而改之。”《述而》
+</p>
+
+<p>
+子在川上曰：“逝者如斯夫，不舍昼夜。”《子罕》
+</p>
+
+<p>
+子曰：“三军可夺帅也， 匹夫不可夺志也。”《子罕》
+</p>
+
+<p>
+子夏曰：“博学而笃志，切问而近思，仁在其中矣。”《子张》
+</p>
+</div>
+</div>
+<div id="outline-container-org201fbae" class="outline-3">
+<h3 id="org201fbae"><span class="section-number-3">1.11</span> 师说 韩愈</h3>
+<div class="outline-text-3" id="text-1-11">
+<p>
+古之学者必有师。师者，所以传道受业解惑也。人非生而知之者，孰能无惑？惑而不从师，其为惑也，终不解矣。生乎吾前，其闻道也固先乎吾，吾从而师之；生乎吾后，其闻道也亦先乎吾，吾从而师之。吾师道也，夫庸知其年之先后生于吾乎？是故无贵无贱，无长无少，道之所存，师之所存也。
+</p>
+
+<p>
+嗟乎！师道之不传也久矣！欲人之无惑也难矣！古之圣人，其出人也远矣，犹且从师而问焉；今之众人，其下圣人也亦远矣，而耻学于师。是故圣益圣，愚益愚。圣人之所以为圣，愚人之所以为愚，其皆出于此乎？爱其子，择师而教之；于其身也，则耻师焉，惑矣。彼童子之师，授之书而习其句读者，非吾所谓传其道解其惑者也。句读之不知，惑之不解，或师焉，或不焉，小学而大遗，吾未见其明也。巫医乐师百工之人，不耻相师。士大夫之族，曰师曰弟子云者，则群聚而笑之。问之，则曰：“彼与彼年相若也，道相似也。位卑则足羞，官盛则近谀。”呜呼！师道之不复可知矣。巫医乐师百工之人，君子不齿，今其智乃反不能及，其可怪也欤！
+</p>
+
+<p>
+圣人无常师。孔子师郯子、苌弘、师襄、老聃。郯子之徒，其贤不及孔子。孔子曰：三人行，则必有我师。是故弟子不必不如师，师不必贤于弟子，闻道有先后，术业有专攻，如是而已。
+</p>
+
+<p>
+李氏子蟠，年十七，好古文，六艺经传皆通习之，不拘于时，学于余。余嘉其能行古道，作师说以贻之。
+</p>
+</div>
+</div>
+<div id="outline-container-org505e408" class="outline-3">
+<h3 id="org505e408"><span class="section-number-3">1.12</span> 杂说四·马说 韩愈</h3>
+<div class="outline-text-3" id="text-1-12">
+<p>
+世有伯乐，然后有千里马。千里马常有，而伯乐不常有。故虽有名马，祗辱于奴隶人之手，骈死于槽枥之间，不以千里称也。(祗辱 一作：只辱)
+</p>
+
+<p>
+马之千里者，一食或尽粟一石。食马者不知其能千里而食也。是马也，虽有千里之能，食不饱，力不足，才美不外见，且欲与常马等不可得，安求其能千里也？(食马者 通：饲)
+</p>
+
+<p>
+策之不以其道，食之不能尽其材，鸣之而不能通其意，执策而临之，曰：“天下无马！”呜呼！其真无马邪？其真不知马也！
+</p>
+</div>
+</div>
+<div id="outline-container-org6213759" class="outline-3">
+<h3 id="org6213759"><span class="section-number-3">1.13</span> 进学解 韩愈</h3>
+<div class="outline-text-3" id="text-1-13">
+<p>
+国子先生晨入太学，招诸生立馆下，诲之曰：“业精于勤，荒于嬉；行成于思，毁于随。方今圣贤相逢，治具毕张。拔去凶邪，登崇畯良。占小善者率以录，名一艺者无不庸。爬罗剔抉，刮垢磨光。盖有幸而获选，孰云多而不扬？诸生业患不能精，无患有司之不明；行患不能成，无患有司之不公。”
+</p>
+
+<p>
+言未既，有笑于列者曰：“先生欺余哉！弟子事先生，于兹有年矣。先生口不绝吟于六艺之文，手不停披于百家之编。纪事者必提其要，纂言者必钩其玄。贪多务得，细大不捐。焚膏油以继晷，恒兀兀以穷年。先生之业，可谓勤矣。
+</p>
+
+<p>
+觝排异端，攘斥佛老。补苴罅漏，张皇幽眇。寻坠绪之茫茫，独旁搜而远绍。障百川而东之，回狂澜于既倒。先生之于儒，可谓有劳矣。
+</p>
+
+<p>
+沉浸醲郁，含英咀华，作为文章，其书满家。上规姚姒，浑浑无涯；周诰、殷《盘》，佶屈聱牙；《春秋》谨严，《左氏》浮夸；《易》奇而法，《诗》正而葩；下逮《庄》、《骚》，太史所录；子云，相如，同工异曲。先生之于文，可谓闳其中而肆其外矣。
+</p>
+
+<p>
+少始知学，勇于敢为；长通于方，左右具宜。先生之于为人，可谓成矣。
+</p>
+
+<p>
+然而公不见信于人，私不见助于友。跋前踬后，动辄得咎。暂为御史，遂窜南夷。三年博士，冗不见治。命与仇谋，取败几时。冬暖而儿号寒，年丰而妻啼饥。头童齿豁，竟死何裨。不知虑此，而反教人为？”
+</p>
+
+<p>
+先生曰：“吁，子来前！夫大木为杗，细木为桷，欂栌、侏儒，椳、闑、扂、楔，各得其宜，施以成室者，匠氏之工也。玉札、丹砂，赤箭、青芝，牛溲、马勃，败鼓之皮，俱收并蓄，待用无遗者，医师之良也。登明选公，杂进巧拙，纡馀为妍，卓荦为杰，校短量长，惟器是适者，宰相之方也。昔者孟轲好辩，孔道以明，辙环天下，卒老于行。荀卿守正，大论是弘，逃谗于楚，废死兰陵。是二儒者，吐辞为经，举足为法，绝类离伦，优入圣域，其遇于世何如也？今先生学虽勤而不繇其统，言虽多而不要其中，文虽奇而不济于用，行虽修而不显于众。犹且月费俸钱，岁靡廪粟；子不知耕，妇不知织；乘马从徒，安坐而食。踵常途之役役，窥陈编以盗窃。然而圣主不加诛，宰臣不见斥，兹非其幸欤？动而得谤，名亦随之。投闲置散，乃分之宜。若夫商财贿之有亡，计班资之崇庳，忘己量之所称，指前人之瑕疵，是所谓诘匠氏之不以杙为楹，而訾医师以昌阳引年，欲进其豨苓也。
+</p>
+</div>
+</div>
+<div id="outline-container-org6a2aedf" class="outline-3">
+<h3 id="org6a2aedf"><span class="section-number-3">1.14</span> 诫子书 诸葛亮</h3>
+<div class="outline-text-3" id="text-1-14">
+<p>
+夫君子之行，静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也。非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能治性。年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！ (淡泊 一作：澹泊；淫慢 一作：慆慢)
+</p>
+</div>
+</div>
+<div id="outline-container-orgba4bb72" class="outline-3">
+<h3 id="orgba4bb72"><span class="section-number-3">1.15</span> 原毁 韩愈</h3>
+<div class="outline-text-3" id="text-1-15">
+<p>
+古之君子，其责己也重以周，其待人也轻以约。重以周，故不怠；轻以约，故人乐为善。
+</p>
+
+<p>
+闻古之人有舜者，其为人也，仁义人也。求其所以为舜者，责于己曰：“彼，人也；予，人也。彼能是，而我乃不能是！”早夜以思，去其不如舜者，就其如舜者。闻古之人有周公者，其为人也，多才与艺人也。求其所以为周公者，责于己曰：“彼，人也；予，人也。彼能是，而我乃不能是！”早夜以思，去其不如周公者，就其如周公者。舜，大圣人也，后世无及焉；周公，大圣人也，后世无及焉。是人也，乃曰：“不如舜，不如周公，吾之病也。”是不亦责于身者重以周乎！其于人也，曰：“彼人也，能有是，是足为良人矣；能善是，是足为艺人矣。”取其一，不责其二；即其新，不究其旧：恐恐然惟惧其人之不得为善之利。一善易修也，一艺易能也，其于人也，乃曰：“能有是，是亦足矣。”曰：“能善是，是亦足矣。”不亦待于人者轻以约乎？
+</p>
+
+<p>
+今之君子则不然。其责人也详，其待己也廉。详，故人难于为善；廉，故自取也少。己未有善，曰：“我善是，是亦足矣。”己未有能，曰：“我能是，是亦足矣。”外以欺于人，内以欺于心，未少有得而止矣，不亦待其身者已廉乎？
+</p>
+
+<p>
+其于人也，曰：“彼虽能是，其人不足称也；彼虽善是，其用不足称也。”举其一，不计其十；究其旧，不图其新：恐恐然惟惧其人之有闻也。是不亦责于人者已详乎？
+</p>
+
+<p>
+夫是之谓不以众人待其身，而以圣人望于人，吾未见其尊己也。
+</p>
+
+<p>
+虽然，为是者，有本有原，怠与忌之谓也。怠者不能修，而忌者畏人修。吾尝试之矣，尝试语于众曰：“某良士，某良士。”其应者，必其人之与也；不然，则其所疏远不与同其利者也；不然，则其畏也。不若是，强者必怒于言，懦者必怒于色矣。又尝语于众曰：“某非良士，某非良士。”其不应者，必其人之与也，不然，则其所疏远不与同其利者也，不然，则其畏也。不若是，强者必说于言，懦者必说于色矣。
+</p>
+
+<p>
+是故事修而谤兴，德高而毁来。呜呼！士之处此世，而望名誉之光，道德之行，难已！
+</p>
+
+<p>
+将有作于上者，得吾说而存之，其国家可几而理欤！
+</p>
+</div>
+</div>
+<div id="outline-container-orged3cc67" class="outline-3">
+<h3 id="orged3cc67"><span class="section-number-3">1.16</span> 唐多令·芦叶满汀洲 刘过</h3>
+<div class="outline-text-3" id="text-1-16">
+<p>
+安远楼小集，侑觞歌板之姬黄其姓者，乞词于龙洲道人，为赋此《唐多令》。同柳阜之、刘去非、石民瞻、周嘉仲、陈孟参、孟容。时八月五日也。
+</p>
+
+<p>
+芦叶满汀洲，寒沙带浅流。二十年重过南楼。柳下系船犹未稳，能几日，又中秋。
+黄鹤断矶头，故人今在否？旧江山浑是新愁。欲买桂花同载酒，终不似，少年游。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcefd54b" class="outline-2">
+<h2 id="orgcefd54b"><span class="section-number-2">2</span> 志气意趣篇</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgcacf820" class="outline-3">
+<h3 id="orgcacf820"><span class="section-number-3">2.1</span> 行路难·其一 李白</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+金樽清酒斗十千，玉盘珍羞直万钱。(羞 通：馐；直 通：值)
+</p>
+
+<p>
+停杯投箸不能食，拔剑四顾心茫然。
+</p>
+
+<p>
+欲渡黄河冰塞川，将登太行雪满山。(雪满山 一作：雪暗天)
+</p>
+
+<p>
+闲来垂钓碧溪上，忽复乘舟梦日边。(碧 一作：坐)
+</p>
+
+<p>
+行路难！行路难！多歧路，今安在？
+</p>
+
+<p>
+长风破浪会有时，直挂云帆济沧海。
+</p>
+</div>
+</div>
+<div id="outline-container-org8d3af93" class="outline-3">
+<h3 id="org8d3af93"><span class="section-number-3">2.2</span> 望岳 杜甫</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+岱宗夫如何？齐鲁青未了。
+</p>
+
+<p>
+造化钟神秀，阴阳割昏晓。
+</p>
+
+<p>
+荡胸生曾云，决眦入归鸟。( 曾 通：层)
+</p>
+
+<p>
+会当凌绝顶，一览众山小。
+</p>
+</div>
+</div>
+<div id="outline-container-org0a8c369" class="outline-3">
+<h3 id="org0a8c369"><span class="section-number-3">2.3</span> 夏日绝句 李清照</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+生当作人杰，死亦为鬼雄。
+</p>
+
+<p>
+至今思项羽，不肯过江东。
+</p>
+</div>
+</div>
+<div id="outline-container-org68b0e93" class="outline-3">
+<h3 id="org68b0e93"><span class="section-number-3">2.4</span> 梅花 王安石</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+墙角数枝梅，凌寒独自开。
+</p>
+
+<p>
+遥知不是雪，为有暗香来。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d5a262" class="outline-3">
+<h3 id="org3d5a262"><span class="section-number-3">2.5</span> 登飞来峰 王安石</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+飞来山上千寻塔，闻说鸡鸣见日升。(飞来山 一作：飞来峰)
+</p>
+
+<p>
+不畏浮云遮望眼，自缘身在最高层。(自缘 一作：只缘)
+</p>
+</div>
+</div>
+<div id="outline-container-org5235ec7" class="outline-3">
+<h3 id="org5235ec7"><span class="section-number-3">2.6</span> 书愤五首·其一 陆游</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+早岁那知世事艰，中原北望气如山。
+</p>
+
+<p>
+楼船夜雪瓜洲渡，铁马秋风大散关。
+</p>
+
+<p>
+塞上长城空自许，镜中衰鬓已先斑。
+</p>
+
+<p>
+出师一表真名世，千载谁堪伯仲间！
+</p>
+</div>
+</div>
+
+<div id="outline-container-org43d41c2" class="outline-3">
+<h3 id="org43d41c2"><span class="section-number-3">2.7</span> 与诸子登岘山 孟浩然</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+人事有代谢，往来成古今。
+</p>
+
+<p>
+江山留胜迹，我辈复登临。
+</p>
+
+<p>
+水落鱼梁浅，天寒梦泽深。
+</p>
+
+<p>
+羊公碑尚在，读罢泪沾襟。(尚在 一作：字在)
+</p>
+</div>
+</div>
+<div id="outline-container-org3d6c92d" class="outline-3">
+<h3 id="org3d6c92d"><span class="section-number-3">2.8</span> 陋室铭 刘禹锡</h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。苔痕上阶绿，草色入帘青。谈笑有鸿儒，往来无白丁。可以调素琴，阅金经。无丝竹之乱耳，无案牍之劳形。南阳诸葛庐，西蜀子云亭。孔子云：何陋之有？
+</p>
+</div>
+</div>
+<div id="outline-container-org51b8d40" class="outline-3">
+<h3 id="org51b8d40"><span class="section-number-3">2.9</span> 五柳先生传 陶渊明</h3>
+<div class="outline-text-3" id="text-2-9">
+<p>
+先生不知何许人也，亦不详其姓字，宅边有五柳树，因以为号焉。闲静少言，不慕荣利。好读书，不求甚解；每有会意，便欣然忘食。性嗜酒，家贫不能常得。亲旧知其如此，或置酒而招之；造饮辄尽，期在必醉。既醉而退，曾不吝情去留。环堵萧然，不蔽风日；短褐穿结，箪瓢屡空，晏如也。常著文章自娱，颇示己志。忘怀得失，以此自终。
+</p>
+
+<p>
+赞曰：黔娄之妻有言：“不戚戚于贫贱，不汲汲于富贵。”其言兹若人之俦乎？衔觞赋诗，以乐其志，无怀氏之民欤？葛天氏之民欤？
+</p>
+</div>
+</div>
+<div id="outline-container-orgaaf2031" class="outline-3">
+<h3 id="orgaaf2031"><span class="section-number-3">2.10</span> 饮酒·其五 陶渊明</h3>
+<div class="outline-text-3" id="text-2-10">
+<p>
+结庐在人境，而无车马喧。
+</p>
+
+<p>
+问君何能尔？心远地自偏。
+</p>
+
+<p>
+采菊东篱下，悠然见南山。
+</p>
+
+<p>
+山气日夕佳，飞鸟相与还。
+</p>
+
+<p>
+此中有真意，欲辨已忘言。
+</p>
+</div>
+</div>
+<div id="outline-container-orgcbc132f" class="outline-3">
+<h3 id="orgcbc132f"><span class="section-number-3">2.11</span> 归园田居·其一 陶渊明</h3>
+<div class="outline-text-3" id="text-2-11">
+<p>
+少无适俗韵，性本爱丘山。
+</p>
+
+<p>
+误落尘网中，一去三十年。(误落 一作：误入)
+</p>
+
+<p>
+羁鸟恋旧林，池鱼思故渊。
+</p>
+
+<p>
+开荒南野际，守拙归园田。
+</p>
+
+<p>
+方宅十余亩，草屋八九间。
+</p>
+
+<p>
+榆柳荫后檐，桃李罗堂前。
+</p>
+
+<p>
+暧暧远人村，依依墟里烟。
+</p>
+
+<p>
+狗吠深巷中，鸡鸣桑树颠。
+</p>
+
+<p>
+户庭无尘杂，虚室有余闲。
+</p>
+
+<p>
+久在樊笼里，复得返自然。
+</p>
+</div>
+</div>
+<div id="outline-container-orgd87d2fe" class="outline-3">
+<h3 id="orgd87d2fe"><span class="section-number-3">2.12</span> 归园田居·其三 陶渊明</h3>
+<div class="outline-text-3" id="text-2-12">
+<p>
+种豆南山下，草盛豆苗稀。
+</p>
+
+<p>
+晨兴理荒秽，带月荷锄归。
+</p>
+
+<p>
+道狭草木长，夕露沾我衣。
+</p>
+
+<p>
+衣沾不足惜，但使愿无违。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb6d2993" class="outline-3">
+<h3 id="orgb6d2993"><span class="section-number-3">2.13</span> 与诸子登岘山 孟浩然</h3>
+<div class="outline-text-3" id="text-2-13">
+<p>
+人事有代谢，往来成古今。
+</p>
+
+<p>
+江山留胜迹，我辈复登临。
+</p>
+
+<p>
+水落鱼梁浅，天寒梦泽深。
+</p>
+
+<p>
+羊公碑尚在，读罢泪沾襟。(尚在 一作：字在)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4fee0b7" class="outline-3">
+<h3 id="org4fee0b7"><span class="section-number-3">2.14</span> 登飞来峰 王安石</h3>
+<div class="outline-text-3" id="text-2-14">
+<p>
+飞来山上千寻塔，闻说鸡鸣见日升。(飞来山 一作：飞来峰)
+</p>
+
+<p>
+不畏浮云遮望眼，自缘身在最高层。(自缘 一作：只缘)
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb2ea3a7" class="outline-2">
+<h2 id="orgb2ea3a7"><span class="section-number-2">3</span> 悯农爱民篇</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgb0af076" class="outline-3">
+<h3 id="orgb0af076"><span class="section-number-3">3.1</span> 观刈麦 白居易</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+田家少闲月，五月人倍忙。
+</p>
+
+<p>
+夜来南风起，小麦覆陇黄。
+</p>
+
+<p>
+妇姑荷箪食，童稚携壶浆，
+</p>
+
+<p>
+相随饷田去，丁壮在南冈。
+</p>
+
+<p>
+足蒸暑土气，背灼炎天光，
+</p>
+
+<p>
+力尽不知热，但惜夏日长。
+</p>
+
+<p>
+复有贫妇人，抱子在其旁，
+</p>
+
+<p>
+右手秉遗穗，左臂悬敝筐。
+</p>
+
+<p>
+听其相顾言，闻者为悲伤。
+</p>
+
+<p>
+家田输税尽，拾此充饥肠。
+</p>
+
+<p>
+今我何功德？曾不事农桑。
+</p>
+
+<p>
+吏禄三百石，岁晏有余粮，
+</p>
+
+<p>
+念此私自愧，尽日不能忘。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7be67e" class="outline-3">
+<h3 id="orgf7be67e"><span class="section-number-3">3.2</span> 悯农二首 李绅</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+春种一粒粟，秋收万颗子。
+</p>
+
+<p>
+四海无闲田，农夫犹饿死。
+</p>
+
+
+<p>
+锄禾日当午，汗滴禾下土。
+</p>
+
+<p>
+谁知盘中餐，粒粒皆辛苦？
+</p>
+</div>
+</div>
+<div id="outline-container-org6ab9537" class="outline-3">
+<h3 id="org6ab9537"><span class="section-number-3">3.3</span> 赤日炎炎似火烧 无名氏</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+赤日炎炎似火烧,野田禾稻半枯焦。
+</p>
+
+<p>
+农夫心内如汤煮，公子王孙把扇摇。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org2809b18" class="outline-2">
+<h2 id="org2809b18"><span class="section-number-2">4</span> 思乡念亲篇</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orge758ac9" class="outline-3">
+<h3 id="orge758ac9"><span class="section-number-3">4.1</span> 静夜思 李白</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+床前明月光，疑似地上霜。
+</p>
+
+<p>
+举头望明月，低头思故乡。
+</p>
+</div>
+</div>
+<div id="outline-container-org16171b5" class="outline-3">
+<h3 id="org16171b5"><span class="section-number-3">4.2</span> 泊船瓜洲 王安石</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+京口瓜洲一水间，钟山只隔数重山。
+</p>
+
+<p>
+春风又绿江南岸，明月何时照我还？
+</p>
+</div>
+</div>
+<div id="outline-container-orga7a5ff1" class="outline-3">
+<h3 id="orga7a5ff1"><span class="section-number-3">4.3</span> 逢入京使 岑参</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+故园东望路漫漫，双袖龙钟泪不干。
+</p>
+
+<p>
+马上相逢无纸笔，凭君传语报平安。
+</p>
+</div>
+</div>
+<div id="outline-container-orgfb1b689" class="outline-3">
+<h3 id="orgfb1b689"><span class="section-number-3">4.4</span> 八声甘州·对潇潇暮雨洒江天 柳永</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+对潇潇暮雨洒江天，一番洗清秋。渐霜风凄紧，关河冷落，残照当楼。是处红衰翠减，苒苒物华休。唯有长江水，无语东流。 
+</p>
+
+<p>
+不忍登高临远，望故乡渺邈，归思难收。叹年来踪迹，何事苦淹留？想佳人妆楼颙望，误几回、天际识归舟。争知我，倚阑杆处，正恁凝愁！(阑 一作：栏)
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orga8da96b" class="outline-2">
+<h2 id="orga8da96b"><span class="section-number-2">5</span> 爱情篇</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org87b931d" class="outline-3">
+<h3 id="org87b931d"><span class="section-number-3">5.1</span> 鹊桥仙·纤云弄巧 秦观</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+纤云弄巧，飞星传恨，银汉迢迢暗度。金风玉露一相逢，便胜却人间无数。
+</p>
+
+<p>
+柔情似水，佳期如梦，忍顾鹊桥归路！两情若是久长时，又岂在朝朝暮暮。 
+</p>
+</div>
+</div>
+<div id="outline-container-orgaac3281" class="outline-3">
+<h3 id="orgaac3281"><span class="section-number-3">5.2</span> 钗头凤·红酥手 陆游</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+红酥手，黄縢酒，满城春色宫墙柳。东风恶，欢情薄。一怀愁绪，几年离索。错、错、错。
+</p>
+
+<p>
+春如旧，人空瘦，泪痕红浥鲛绡透。桃花落，闲池阁。山盟虽在，锦书难托。莫、莫、莫！ 
+</p>
+</div>
+</div>
+<div id="outline-container-org4a098f0" class="outline-3">
+<h3 id="org4a098f0"><span class="section-number-3">5.3</span> 钗头凤·世情薄 唐婉</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+世情薄，人情恶，雨送黄昏花易落。晓风干，泪痕残。欲笺心事，独语斜阑。难，难，难！
+</p>
+
+<p>
+人成各，今非昨，病魂常似秋千索。角声寒，夜阑珊。怕人寻问，咽泪装欢。瞒，瞒，瞒！(装 通：妆) 
+</p>
+</div>
+</div>
+<div id="outline-container-org39f1472" class="outline-3">
+<h3 id="org39f1472"><span class="section-number-3">5.4</span> 离思五首·其四 元稹</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+曾经沧海难为水，除却巫山不是云。
+</p>
+
+<p>
+取次花丛懒回顾，半缘修道半缘君。 
+</p>
+</div>
+</div>
+<div id="outline-container-org70b86f5" class="outline-3">
+<h3 id="org70b86f5"><span class="section-number-3">5.5</span> 卜算子·我住长江头 李之仪</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+我住长江头，君住长江尾。日日思君不见君，共饮长江水。
+</p>
+
+<p>
+此水几时休，此恨何时已。只愿君心似我心，定不负相思意。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org330cc72" class="outline-3">
+<h3 id="org330cc72"><span class="section-number-3">5.6</span> 上邪</h3>
+<div class="outline-text-3" id="text-5-6">
+<p>
+上邪！我欲与君相知，长命无绝衰。
+</p>
+
+<p>
+山无陵，江水为竭，冬雷震震，夏雨雪，天地合，乃敢与君绝。
+</p>
+</div>
+</div>
+<div id="outline-container-orgba92de7" class="outline-3">
+<h3 id="orgba92de7"><span class="section-number-3">5.7</span> 千秋岁·数声鶗鴂 张先</h3>
+<div class="outline-text-3" id="text-5-7">
+<p>
+数声鶗鴂。又报芳菲歇。惜春更把残红折。雨轻风色暴，梅子青时节。永丰柳，无人尽日飞花雪。
+</p>
+
+<p>
+莫把幺弦拨。怨极弦能说。天不老，情难绝。心似双丝网，中有千千结。夜过也，东窗未白凝残月。 
+</p>
+</div>
+</div>
+<div id="outline-container-org5a47395" class="outline-3">
+<h3 id="org5a47395"><span class="section-number-3">5.8</span> 白头吟 卓文君</h3>
+<div class="outline-text-3" id="text-5-8">
+<p>
+皑如山上雪，皎若云间月。
+</p>
+
+<p>
+闻君有两意，故来相决绝。
+</p>
+
+<p>
+今日斗酒会，明旦沟水头。
+</p>
+
+<p>
+躞蹀御沟上，沟水东西流。
+</p>
+
+<p>
+凄凄复凄凄，嫁娶不须啼。
+</p>
+
+<p>
+愿得一心人，白头不相离。
+</p>
+
+<p>
+竹竿何袅袅，鱼尾何簁簁！
+</p>
+
+<p>
+男儿重意气，何用钱刀为！
+</p>
+</div>
+</div>
+<div id="outline-container-orgaa0a0ef" class="outline-3">
+<h3 id="orgaa0a0ef"><span class="section-number-3">5.9</span> 浣溪沙·谁念西风独自凉 纳兰性德</h3>
+<div class="outline-text-3" id="text-5-9">
+<p>
+谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳。
+</p>
+
+<p>
+被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常。 
+</p>
+</div>
+</div>
+<div id="outline-container-orga53be88" class="outline-3">
+<h3 id="orga53be88"><span class="section-number-3">5.10</span> 生查子·元夕 欧阳修</h3>
+<div class="outline-text-3" id="text-5-10">
+<p>
+去年元夜时，花市灯如昼。
+</p>
+
+<p>
+月上柳梢头，人约黄昏后。
+</p>
+
+<p>
+今年元夜时，月与灯依旧。
+</p>
+
+<p>
+不见去年人，泪湿春衫袖。(湿 一作：满) 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgee51b01" class="outline-3">
+<h3 id="orgee51b01"><span class="section-number-3">5.11</span> 江城子·乙卯正月二十日夜记梦 苏轼</h3>
+<div class="outline-text-3" id="text-5-11">
+<p>
+十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。
+</p>
+
+<p>
+夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。(肠断 一作：断肠) 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgeb50182" class="outline-3">
+<h3 id="orgeb50182"><span class="section-number-3">5.12</span> 子衿 佚名</h3>
+<div class="outline-text-3" id="text-5-12">
+<p>
+青青子衿，悠悠我心。纵我不往，子宁不嗣音？
+</p>
+
+<p>
+青青子佩，悠悠我思。纵我不往，子宁不来？
+</p>
+
+<p>
+挑兮达兮，在城阙兮。一日不见，如三月兮！
+</p>
+</div>
+</div>
+
+<div id="outline-container-orged65f54" class="outline-3">
+<h3 id="orged65f54"><span class="section-number-3">5.13</span> 蝶恋花·伫倚危楼风细细 柳永</h3>
+<div class="outline-text-3" id="text-5-13">
+<p>
+伫倚危楼风细细，望极春愁，黯黯生天际。草色烟光残照里，无言谁会凭阑意。(阑 通 栏)
+</p>
+
+<p>
+拟把疏狂图一醉，对酒当歌，强乐还无味。衣带渐宽终不悔，为伊消得人憔悴。 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org207dcce" class="outline-3">
+<h3 id="org207dcce"><span class="section-number-3">5.14</span> 迢迢牵牛星 佚名</h3>
+<div class="outline-text-3" id="text-5-14">
+<p>
+迢迢牵牛星，皎皎河汉女。
+</p>
+
+<p>
+纤纤擢素手，札札弄机杼。
+</p>
+
+<p>
+终日不成章，泣涕零如雨。
+</p>
+
+<p>
+河汉清且浅，相去复几许。
+</p>
+
+<p>
+盈盈一水间，脉脉不得语。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaa3cbaa" class="outline-3">
+<h3 id="orgaa3cbaa"><span class="section-number-3">5.15</span> 摸鱼儿·雁丘词 / 迈陂塘·雁丘词 元好问</h3>
+<div class="outline-text-3" id="text-5-15">
+<p>
+乙丑岁赴试并州，道逢捕雁者云：“今旦获一雁，杀之矣。其脱网者悲鸣不能去，竟自投于地而死。”予因买得之，葬之汾水之上，垒石为识，号曰“雁丘”。同行者多为赋诗，予亦有《雁丘词》。旧所作无宫商，今改定之。
+</p>
+
+
+
+<p>
+问世间，情是何物，直教生死相许？
+</p>
+
+<p>
+天南地北双飞客，老翅几回寒暑。
+</p>
+
+<p>
+欢乐趣，离别苦，就中更有痴儿女。
+</p>
+
+<p>
+君应有语：渺万里层云，千山暮雪，只影向谁去？
+</p>
+
+<p>
+横汾路，寂寞当年箫鼓，荒烟依旧平楚。
+</p>
+
+<p>
+招魂楚些何嗟及，山鬼暗啼风雨。
+</p>
+
+<p>
+天也妒，未信与，莺儿燕子俱黄土。
+</p>
+
+<p>
+千秋万古，为留待骚人，狂歌痛饮，来访雁丘处。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga4bd23c" class="outline-3">
+<h3 id="orga4bd23c"><span class="section-number-3">5.16</span> 玉楼春·春恨 晏殊</h3>
+<div class="outline-text-3" id="text-5-16">
+<p>
+绿杨芳草长亭路，年少抛人容易去。楼头残梦五更钟，花底离愁三月雨。(离愁 一作：离情)
+</p>
+
+<p>
+无情不似多情苦，一寸还成千万缕。天涯地角有穷时，只有相思无尽处。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8a7fc32" class="outline-3">
+<h3 id="org8a7fc32"><span class="section-number-3">5.17</span> 题都城南庄 崔护</h3>
+<div class="outline-text-3" id="text-5-17">
+<p>
+去年今日此门中，人面桃花相映红。
+</p>
+
+<p>
+人面不知何处去，桃花依旧笑春风。
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org5c64f85" class="outline-3">
+<h3 id="org5c64f85"><span class="section-number-3">5.18</span> 折桂令·春情 徐再思</h3>
+<div class="outline-text-3" id="text-5-18">
+<p>
+平生不会相思，才会相思，便害相思。
+</p>
+
+<p>
+身似浮云，心如飞絮，气若游丝。
+</p>
+
+<p>
+空一缕余香在此，盼千金游子何之。
+</p>
+
+<p>
+证候来时，正是何时？灯半昏时，月半明时。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1cc003f" class="outline-3">
+<h3 id="org1cc003f"><span class="section-number-3">5.19</span> 绮怀十六首·其十五  清代：黄景仁</h3>
+<div class="outline-text-3" id="text-5-19">
+<p>
+几回花下坐吹箫，银汉红墙入望遥。
+</p>
+
+<p>
+似此星辰非昨夜，为谁风露立中宵。
+</p>
+
+<p>
+缠绵思尽抽残茧，宛转心伤剥后蕉。
+</p>
+
+<p>
+三五年时三五月，可怜杯酒不曾消。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2bad3a0" class="outline-3">
+<h3 id="org2bad3a0"><span class="section-number-3">5.20</span> 赠邻女 / 寄李亿员外 鱼玄机</h3>
+<div class="outline-text-3" id="text-5-20">
+<p>
+羞日遮罗袖，愁春懒起妆。
+</p>
+
+<p>
+易求无价宝，难得有心郎。
+</p>
+
+<p>
+枕上潜垂泪，花间暗断肠。
+</p>
+
+<p>
+自能窥宋玉，何必恨王昌？ 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2949ae9" class="outline-3">
+<h3 id="org2949ae9"><span class="section-number-3">5.21</span> 谢池春·残寒销尽  宋 李之仪</h3>
+<div class="outline-text-3" id="text-5-21">
+<p>
+残寒销尽，疏雨过、清明后。花径敛余红，风沼萦新皱。乳燕穿庭户，飞絮沾襟袖。正佳时，仍晚昼。著人滋味，真个浓如酒。
+</p>
+
+<p>
+频移带眼，空只恁、厌厌瘦。不见又思量，见了还依旧。为问频相见，何似长相守。天不老，人未偶。且将此恨，分付庭前柳。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4bbd522" class="outline-3">
+<h3 id="org4bbd522"><span class="section-number-3">5.22</span> 长干行二首 李白</h3>
+<div class="outline-text-3" id="text-5-22">
+<p>
+妾发初覆额，折花门前剧。
+</p>
+
+<p>
+郎骑竹马来，绕床弄青梅。
+</p>
+
+<p>
+同居长干里，两小无嫌猜，
+</p>
+
+<p>
+十四为君妇，羞颜未尝开。
+</p>
+
+<p>
+低头向暗壁，千唤不一回。
+</p>
+
+<p>
+十五始展眉，愿同尘与灰。
+</p>
+
+<p>
+常存抱柱信，岂上望夫台。
+</p>
+
+<p>
+十六君远行，瞿塘滟滪堆。
+</p>
+
+<p>
+五月不可触，猿声天上哀。
+</p>
+
+<p>
+门前迟行迹，一一生绿苔。
+</p>
+
+<p>
+苔深不能扫，落叶秋风早。
+</p>
+
+<p>
+八月胡蝶黄，双飞西园草。
+</p>
+
+<p>
+感此伤妾心，坐愁红颜老。
+</p>
+
+<p>
+早晚下三巴，预将书报家。
+</p>
+
+<p>
+相迎不道远，直至长风沙。
+</p>
+
+
+
+<p>
+忆妾深闺里，烟尘不曾识。
+</p>
+
+<p>
+嫁与长干人，沙头候风色。
+</p>
+
+<p>
+五月南风兴，思君下巴陵。
+</p>
+
+<p>
+八月西风起，想君发扬子。
+</p>
+
+<p>
+去来悲如何，见少离别多。
+</p>
+
+<p>
+湘潭几日到，妾梦越风波。
+</p>
+
+<p>
+昨夜狂风度，吹折江头树。
+</p>
+
+<p>
+淼淼暗无边，行人在何处。
+</p>
+
+<p>
+好乘浮云骢，佳期兰渚东。
+</p>
+
+<p>
+鸳鸯绿蒲上，翡翠锦屏中。
+</p>
+
+<p>
+自怜十五余，颜色桃花红。
+</p>
+
+<p>
+那作商人妇，愁水复愁风。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org58fe3d5" class="outline-3">
+<h3 id="org58fe3d5"><span class="section-number-3">5.23</span> 春日行 鲍照</h3>
+<div class="outline-text-3" id="text-5-23">
+<p>
+献岁发，吾将行。
+</p>
+
+<p>
+春山茂，春日明。
+</p>
+
+<p>
+园中鸟，多嘉声。
+</p>
+
+<p>
+梅始发，柳始青。
+</p>
+
+<p>
+泛舟舻，齐棹惊。
+</p>
+
+<p>
+奏《采菱》，歌《鹿鸣》。
+</p>
+
+<p>
+风微起，波微生。
+</p>
+
+<p>
+弦亦发，酒亦倾。
+</p>
+
+<p>
+入莲池，折桂枝。
+</p>
+
+<p>
+芳袖动，芬叶披。
+</p>
+
+<p>
+两相思，两不知。 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgc634c6d" class="outline-3">
+<h3 id="orgc634c6d"><span class="section-number-3">5.24</span> 无题 李商隐</h3>
+<div class="outline-text-3" id="text-5-24">
+<p>
+相见时难别亦难，东风无力百花残。
+</p>
+
+<p>
+春蚕到死丝方尽，蜡炬成灰泪始干。
+</p>
+
+<p>
+晓镜但愁云鬓改，夜吟应觉月光寒。
+</p>
+
+<p>
+蓬山此去无多路，青鸟殷勤为探看。(蓬山 一作：蓬莱) 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf4fea7a" class="outline-3">
+<h3 id="orgf4fea7a"><span class="section-number-3">5.25</span> 无题·昨夜星辰昨夜风 李商隐</h3>
+<div class="outline-text-3" id="text-5-25">
+<p>
+昨夜星辰昨夜风，画楼西畔桂堂东。
+</p>
+
+<p>
+身无彩凤双飞翼，心有灵犀一点通。
+</p>
+
+<p>
+隔座送钩春酒暖，分曹射覆蜡灯红。
+</p>
+
+<p>
+嗟余听鼓应官去，走马兰台类转蓬。 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org5f947dc" class="outline-3">
+<h3 id="org5f947dc"><span class="section-number-3">5.26</span> 无题·飒飒东风细雨来 李商隐</h3>
+<div class="outline-text-3" id="text-5-26">
+<p>
+飒飒东风细雨来，芙蓉塘外有轻雷。
+</p>
+
+<p>
+金蟾啮锁烧香入，玉虎牵丝汲井回。
+</p>
+
+<p>
+贾氏窥帘韩掾少，宓妃留枕魏王才。
+</p>
+
+<p>
+春心莫共花争发，一寸相思一寸灰！ 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad0fb3c" class="outline-3">
+<h3 id="orgad0fb3c"><span class="section-number-3">5.27</span> 越人歌</h3>
+<div class="outline-text-3" id="text-5-27">
+<p>
+今夕何夕兮，搴舟中流。
+</p>
+
+<p>
+今日何日兮，得与王子同舟。
+</p>
+
+<p>
+蒙羞被好兮，不訾诟耻。
+</p>
+
+<p>
+心几烦而不绝兮，得知王子。
+</p>
+
+<p>
+山有木兮木有枝，心悦君兮君不知。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ee58af" class="outline-3">
+<h3 id="org8ee58af"><span class="section-number-3">5.28</span> 浪淘沙·借问江潮与海水 白居易</h3>
+<div class="outline-text-3" id="text-5-28">
+<p>
+借问江潮与海水，何似君情与妾心？
+</p>
+
+<p>
+相恨不如潮有信，相思始觉海非深。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge7707cf" class="outline-3">
+<h3 id="orge7707cf"><span class="section-number-3">5.29</span> 诀别书 卓文君</h3>
+<div class="outline-text-3" id="text-5-29">
+<p>
+春华竞芳，五色凌素，琴尚在御，而新声代故！
+</p>
+
+<p>
+锦水有鸳，汉宫有木，彼物而新，嗟世之人兮，瞀于淫而不悟！
+</p>
+
+<p>
+朱弦断，明镜缺，朝露晞，芳时歇，白头吟，伤离别，努力加餐勿念妾，锦水汤汤，与君长诀！ 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org340a5b5" class="outline-3">
+<h3 id="org340a5b5"><span class="section-number-3">5.30</span> 无题四首 李商隐</h3>
+<div class="outline-text-3" id="text-5-30">
+<p>
+来是空言去绝踪，月斜楼上五更钟。
+</p>
+
+<p>
+梦为远别啼难唤，书被催成墨未浓。
+</p>
+
+<p>
+蜡照半笼金翡翠，麝熏微度绣芙蓉。
+</p>
+
+<p>
+刘郎已恨蓬山远，更隔蓬山一万重。
+</p>
+
+
+
+<p>
+飒飒东风细雨来，芙蓉塘外有轻雷。
+</p>
+
+<p>
+金蟾啮锁烧香入，玉虎牵丝汲井回。
+</p>
+
+<p>
+贾氏窥帘韩掾少，宓妃留枕魏王才。
+</p>
+
+<p>
+春心莫共花争发，一寸相思一寸灰。
+</p>
+
+
+
+<p>
+含情春晼晚，暂见夜阑干。
+</p>
+
+<p>
+楼响将登怯，帘烘欲过难。
+</p>
+
+<p>
+多羞钗上燕，真愧镜中鸾。
+</p>
+
+<p>
+归去横塘晓，华星送宝鞍。
+</p>
+
+
+
+<p>
+何处哀筝随急管，樱花永巷垂杨岸。
+</p>
+
+<p>
+东家老女嫁不售，白日当天三月半。
+</p>
+
+<p>
+溧阳公主年十四，清明暖后同墙看。
+</p>
+
+<p>
+归来展转到五更，梁间燕子闻长叹。
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orga6f40eb" class="outline-3">
+<h3 id="orga6f40eb"><span class="section-number-3">5.31</span> 凤求凰 司马相如</h3>
+<div class="outline-text-3" id="text-5-31">
+<p>
+其一：【琴曲出自王实甫《西厢记》】
+</p>
+
+<p>
+有一美人兮，见之不忘。（一作：有美人兮，见之不忘。）
+</p>
+
+<p>
+一日不见兮，思之如狂。
+</p>
+
+<p>
+凤飞翱翔兮，四海求凰。
+</p>
+
+<p>
+无奈佳人兮，不在东墙。
+</p>
+
+<p>
+将琴代语兮，聊写衷肠。
+</p>
+
+<p>
+何时见许兮，慰我彷徨。
+</p>
+
+<p>
+愿言配德兮，携手相将。
+</p>
+
+<p>
+不得於飞兮，使我沦亡。
+</p>
+
+
+
+<p>
+其二：
+</p>
+
+<p>
+凤兮凤兮归故乡，遨游四海求其凰。
+</p>
+
+<p>
+时未遇兮无所将，何悟今兮升斯堂！
+</p>
+
+<p>
+有艳淑女在闺房，室迩人遐毒我肠。
+</p>
+
+<p>
+何缘交颈为鸳鸯，胡颉颃兮共翱翔！
+</p>
+
+<p>
+凰兮凰兮从我栖，得托孳尾永为妃。
+</p>
+
+<p>
+交情通意心和谐，中夜相从知者谁？
+</p>
+
+<p>
+双翼俱起翻高飞，无感我思使余悲。
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgeca9a48" class="outline-3">
+<h3 id="orgeca9a48"><span class="section-number-3">5.32</span> 马嵬·其二 李商隐</h3>
+<div class="outline-text-3" id="text-5-32">
+<p>
+海外徒闻更九州，他生未卜此生休。
+</p>
+
+<p>
+空闻虎旅传宵柝，无复鸡人报晓筹。(传 一作：鸣)
+</p>
+
+<p>
+此日六军同驻马，当时七夕笑牵牛。
+</p>
+
+<p>
+如何四纪为天子，不及卢家有莫愁。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf378c32" class="outline-3">
+<h3 id="orgf378c32"><span class="section-number-3">5.33</span> 孔雀东南飞并序 / 古诗为焦仲卿妻作</h3>
+<div class="outline-text-3" id="text-5-33">
+<p>
+汉末建安中，庐江府小吏焦仲卿妻刘氏，为仲卿母所遣，自誓不嫁。其家逼之，乃投水而死。仲卿闻之，亦自缢于庭树。时人伤之，为诗云尔。
+</p>
+
+
+
+<p>
+　　孔雀东南飞，五里一徘徊。
+</p>
+
+
+
+<p>
+　　“十三能织素，十四学裁衣。十五弹箜篌，十六诵诗书。十七为君妇，心中常苦悲。君既为府吏，守节情不移。贱妾留空房，相见常日稀。鸡鸣入机织，夜夜不得息。三日断五匹，大人故嫌迟。非为织作迟，君家妇难为！妾不堪驱使，徒留无所施。便可白公姥，及时相遣归。”
+</p>
+
+
+
+<p>
+　　府吏得闻之，堂上启阿母：“儿已薄禄相，幸复得此妇。结发同枕席，黄泉共为友。共事二三年，始尔未为久。女行无偏斜，何意致不厚。”
+</p>
+
+
+
+<p>
+　　阿母谓府吏：“何乃太区区！此妇无礼节，举动自专由。吾意久怀忿，汝岂得自由！东家有贤女，自名秦罗敷。可怜体无比，阿母为汝求。便可速遣之，遣去慎莫留！”
+</p>
+
+
+
+<p>
+　　府吏长跪告：“伏惟启阿母。今若遣此妇，终老不复取！”
+</p>
+
+
+
+<p>
+　　阿母得闻之，槌床便大怒：“小子无所畏，何敢助妇语！吾已失恩义，会不相从许！”
+</p>
+
+
+
+<p>
+　　府吏默无声，再拜还入户。举言谓新妇，哽咽不能语：“我自不驱卿，逼迫有阿母。卿但暂还家，吾今且报府。不久当归还，还必相迎取。以此下心意，慎勿违吾语。”
+</p>
+
+
+
+<p>
+　　新妇谓府吏：“勿复重纷纭。往昔初阳岁，谢家来贵门。奉事循公姥，进止敢自专？昼夜勤作息，伶俜萦苦辛。谓言无罪过，供养卒大恩；仍更被驱遣，何言复来还！妾有绣腰襦，葳蕤自生光；红罗复斗帐，四角垂香囊；箱帘六七十，绿碧青丝绳，物物各自异，种种在其中。人贱物亦鄙，不足迎后人，留待作遗施，于今无会因。时时为安慰，久久莫相忘！”
+</p>
+
+
+
+<p>
+　　鸡鸣外欲曙，新妇起严妆。著我绣夹裙，事事四五通。足下蹑丝履，头上玳瑁光。腰若流纨素，耳著明月珰。指如削葱根，口如含朱丹。纤纤作细步，精妙世无双。
+</p>
+
+
+
+<p>
+　　上堂拜阿母，阿母怒不止。“昔作女儿时，生小出野里。本自无教训，兼愧贵家子。受母钱帛多，不堪母驱使。今日还家去，念母劳家里。”却与小姑别，泪落连珠子。“新妇初来时，小姑始扶床；今日被驱遣，小姑如我长。勤心养公姥，好自相扶将。初七及下九，嬉戏莫相忘。”出门登车去，涕落百余行。
+</p>
+
+
+
+<p>
+　　府吏马在前，新妇车在后。隐隐何甸甸，俱会大道口。下马入车中，低头共耳语：“誓不相隔卿，且暂还家去。吾今且赴府，不久当还归。誓天不相负！”
+</p>
+
+
+
+<p>
+　　新妇谓府吏：“感君区区怀！君既若见录，不久望君来。君当作磐石，妾当作蒲苇。蒲苇纫如丝，磐石无转移。我有亲父兄，性行暴如雷，恐不任我意，逆以煎我怀。”举手长劳劳，二情同依依 。
+</p>
+
+
+
+<p>
+　　入门上家堂，进退无颜仪。阿母大拊掌，不图子自归：“十三教汝织，十四能裁衣，十五弹箜篌，十六知礼仪，十七遣汝嫁，谓言无誓违。汝今何罪过，不迎而自归？”兰芝惭阿母：“儿实无罪过。”阿母大悲摧。
+</p>
+
+
+
+<p>
+　　还家十余日，县令遣媒来。云有第三郎，窈窕世无双。年始十八九，便言多令才。
+</p>
+
+
+
+<p>
+　　阿母谓阿女：“汝可去应之。”
+</p>
+
+
+
+<p>
+　　阿女含泪答：“兰芝初还时，府吏见丁宁，结誓不别离。今日违情义，恐此事非奇。自可断来信，徐徐更谓之。”
+</p>
+
+
+
+<p>
+　　阿母白媒人：“贫贱有此女，始适还家门。不堪吏人妇，岂合令郎君？幸可广问讯，不得便相许。”
+</p>
+
+
+
+<p>
+　　媒人去数日，寻遣丞请还，说有兰家女，承籍有宦官。云有第五郎，娇逸未有婚。遣丞为媒人，主簿通语言。直说太守家，有此令郎君，既欲结大义，故遣来贵门。
+</p>
+
+
+
+<p>
+　　阿母谢媒人：“女子先有誓，老姥岂敢言！”
+</p>
+
+
+
+<p>
+　　阿兄得闻之，怅然心中烦。举言谓阿妹：“作计何不量！先嫁得府吏，后嫁得郎君。否泰如天地，足以荣汝身。不嫁义郎体，其往欲何云？”
+</p>
+
+<p>
+　　兰芝仰头答：“理实如兄言。谢家事夫婿，中道还兄门。处分适兄意，那得自任专！虽与府吏要，渠会永无缘。登即相许和，便可作婚姻。”
+</p>
+
+
+
+<p>
+　　媒人下床去。诺诺复尔尔。还部白府君：“下官奉使命，言谈大有缘。”府君得闻之，心中大欢喜。视历复开书，便利此月内，六合正相应。良吉三十日，今已二十七，卿可去成婚。交语速装束，络绎如浮云。青雀白鹄舫，四角龙子幡。婀娜随风转，金车玉作轮。踯躅青骢马，流苏金镂鞍。赍钱三百万，皆用青丝穿。杂彩三百匹，交广市鲑珍。从人四五百，郁郁登郡门。
+</p>
+
+
+
+<p>
+　　阿母谓阿女：“适得府君书，明日来迎汝。何不作衣裳？莫令事不举！”
+</p>
+
+
+
+<p>
+　　阿女默无声，手巾掩口啼，泪落便如泻。移我琉璃榻，出置前窗下。左手持刀尺，右手执绫罗。朝成绣夹裙，晚成单罗衫。晻晻日欲暝，愁思出门啼。
+</p>
+
+
+
+<p>
+　　府吏闻此变，因求假暂归。未至二三里，摧藏马悲哀。新妇识马声，蹑履相逢迎。怅然遥相望，知是故人来。举手拍马鞍，嗟叹使心伤：“自君别我后，人事不可量。果不如先愿，又非君所详。我有亲父母，逼迫兼弟兄。以我应他人，君还何所望！”
+</p>
+
+
+
+<p>
+　　府吏谓新妇：“贺卿得高迁！磐石方且厚，可以卒千年；蒲苇一时纫，便作旦夕间。卿当日胜贵，吾独向黄泉！”
+</p>
+
+
+
+<p>
+　　新妇谓府吏：“何意出此言！同是被逼迫，君尔妾亦然。黄泉下相见，勿违今日言！”执手分道去，各各还家门。生人作死别，恨恨那可论？念与世间辞，千万不复全！
+</p>
+
+
+
+<p>
+　　府吏还家去，上堂拜阿母：“今日大风寒，寒风摧树木，严霜结庭兰。儿今日冥冥，令母在后单。故作不良计，勿复怨鬼神！命如南山石，四体康且直！”
+</p>
+
+
+
+<p>
+　　阿母得闻之，零泪应声落：“汝是大家子，仕宦于台阁。慎勿为妇死，贵贱情何薄！东家有贤女，窈窕艳城郭，阿母为汝求，便复在旦夕。”
+</p>
+
+
+
+<p>
+　　府吏再拜还，长叹空房中，作计乃尔立。转头向户里，渐见愁煎迫。
+</p>
+
+
+
+<p>
+　　其日牛马嘶，新妇入青庐。奄奄黄昏后，寂寂人定初。“我命绝今日，魂去尸长留！”揽裙脱丝履，举身赴清池。
+</p>
+
+
+
+<p>
+　　府吏闻此事，心知长别离。徘徊庭树下，自挂东南枝。
+</p>
+
+
+
+<p>
+　　两家求合葬，合葬华山傍。东西植松柏，左右种梧桐。枝枝相覆盖，叶叶相交通。中有双飞鸟，自名为鸳鸯。仰头相向鸣，夜夜达五更。行人驻足听，寡妇起彷徨。多谢后世人，戒之慎勿忘。 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org6ce5997" class="outline-3">
+<h3 id="org6ce5997"><span class="section-number-3">5.34</span> 长恨歌 白居易</h3>
+<div class="outline-text-3" id="text-5-34">
+<p>
+汉皇重色思倾国，御宇多年求不得。
+</p>
+
+<p>
+杨家有女初长成，养在深闺人未识。
+</p>
+
+<p>
+天生丽质难自弃，一朝选在君王侧。
+</p>
+
+<p>
+回眸一笑百媚生，六宫粉黛无颜色。
+</p>
+
+<p>
+春寒赐浴华清池，温泉水滑洗凝脂。
+</p>
+
+<p>
+侍儿扶起娇无力，始是新承恩泽时。
+</p>
+
+<p>
+云鬓花颜金步摇，芙蓉帐暖度春宵。
+</p>
+
+<p>
+春宵苦短日高起，从此君王不早朝。
+</p>
+
+<p>
+承欢侍宴无闲暇，春从春游夜专夜。
+</p>
+
+<p>
+后宫佳丽三千人，三千宠爱在一身。
+</p>
+
+<p>
+金屋妆成娇侍夜，玉楼宴罢醉和春。
+</p>
+
+<p>
+姊妹弟兄皆列土，可怜光彩生门户。
+</p>
+
+<p>
+遂令天下父母心，不重生男重生女。
+</p>
+
+<p>
+骊宫高处入青云，仙乐风飘处处闻。
+</p>
+
+<p>
+缓歌慢舞凝丝竹，尽日君王看不足。
+</p>
+
+<p>
+渔阳鼙鼓动地来，惊破《霓裳羽衣曲》。
+</p>
+
+
+
+<p>
+九重城阙烟尘生，千乘万骑西南行。
+</p>
+
+<p>
+翠华摇摇行复止，西出都门百余里。
+</p>
+
+<p>
+六军不发无奈何，宛转娥眉马前死。
+</p>
+
+<p>
+花钿委地无人收，翠翘金雀玉搔头。
+</p>
+
+<p>
+君王掩面救不得，回看血泪相和流。
+</p>
+
+<p>
+黄埃散漫风萧索，云栈萦纡登剑阁。
+</p>
+
+<p>
+峨嵋山下少人行，旌旗无光日色薄。
+</p>
+
+<p>
+蜀江水碧蜀山青，圣主朝朝暮暮情。
+</p>
+
+<p>
+行宫见月伤心色，夜雨闻铃肠断声。
+</p>
+
+<p>
+天旋日转回龙驭，到此踌躇不能去。
+</p>
+
+<p>
+马嵬坡下泥土中，不见玉颜空死处。
+</p>
+
+<p>
+君臣相顾尽沾衣，东望都门信马归。
+</p>
+
+<p>
+归来池苑皆依旧，太液芙蓉未央柳。
+</p>
+
+<p>
+芙蓉如面柳如眉，对此如何不泪垂？
+</p>
+
+<p>
+春风桃李花开夜，秋雨梧桐叶落时。(花开夜 一作：花开日)
+</p>
+
+<p>
+西宫南苑多秋草，落叶满阶红不扫。(南苑 一作：南内)
+</p>
+
+<p>
+梨园弟子白发新，椒房阿监青娥老。
+</p>
+
+<p>
+夕殿萤飞思悄然，孤灯挑尽未成眠。
+</p>
+
+<p>
+迟迟钟鼓初长夜，耿耿星河欲曙天。
+</p>
+
+<p>
+鸳鸯瓦冷霜华重，翡翠衾寒谁与共？
+</p>
+
+<p>
+悠悠生死别经年，魂魄不曾来入梦。
+</p>
+
+
+
+<p>
+临邛道士鸿都客，能以精诚致魂魄。
+</p>
+
+<p>
+为感君王辗转思，遂教方士殷勤觅。
+</p>
+
+<p>
+排空驭气奔如电，升天入地求之遍。
+</p>
+
+<p>
+上穷碧落下黄泉，两处茫茫皆不见。
+</p>
+
+<p>
+忽闻海上有仙山，山在虚无缥缈间。
+</p>
+
+<p>
+楼阁玲珑五云起，其中绰约多仙子。
+</p>
+
+<p>
+中有一人字太真，雪肤花貌参差是。
+</p>
+
+<p>
+金阙西厢叩玉扃，转教小玉报双成。
+</p>
+
+<p>
+闻道汉家天子使，九华帐里梦魂惊。
+</p>
+
+<p>
+揽衣推枕起徘徊，珠箔银屏迤逦开。
+</p>
+
+<p>
+云鬓半偏新睡觉，花冠不整下堂来。
+</p>
+
+
+
+<p>
+风吹仙袂飘飖举，犹似霓裳羽衣舞。(飘飖 一作：飘飘)
+</p>
+
+<p>
+玉容寂寞泪阑干，梨花一枝春带雨。(阑 通：栏)
+</p>
+
+<p>
+含情凝睇谢君王，一别音容两渺茫。
+</p>
+
+<p>
+昭阳殿里恩爱绝，蓬莱宫中日月长。
+</p>
+
+<p>
+回头下望人寰处，不见长安见尘雾。
+</p>
+
+<p>
+惟将旧物表深情，钿合金钗寄将去。
+</p>
+
+<p>
+钗留一股合一扇，钗擘黄金合分钿。
+</p>
+
+<p>
+但令心似金钿坚，天上人间会相见。(但令 一作：但教)
+</p>
+
+
+
+<p>
+临别殷勤重寄词，词中有誓两心知。
+</p>
+
+<p>
+七月七日长生殿，夜半无人私语时。
+</p>
+
+<p>
+在天愿作比翼鸟，在地愿为连理枝。
+</p>
+
+<p>
+天长地久有时尽，此恨绵绵无绝期。
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org8c38f8a" class="outline-3">
+<h3 id="org8c38f8a"><span class="section-number-3">5.35</span> 鹧鸪天·彩袖殷勤捧玉钟 晏几道</h3>
+<div class="outline-text-3" id="text-5-35">
+<p>
+彩袖殷勤捧玉钟，当年拚却醉颜红。舞低杨柳楼心月，歌尽桃花扇底风。
+</p>
+
+<p>
+从别后，忆相逢，几回魂梦与君同。今宵剩把银釭照，犹恐相逢是梦中
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6531341" class="outline-3">
+<h3 id="org6531341"><span class="section-number-3">5.36</span> 青玉案·凌波不过横塘路 贺铸</h3>
+<div class="outline-text-3" id="text-5-36">
+<p>
+凌波不过横塘路，但目送、芳尘去。锦瑟华年谁与度？月桥花院，琐窗朱户，只有春知处。
+</p>
+
+<p>
+飞云冉冉蘅皋暮，彩笔新题断肠句。试问闲情都几许？一川烟草，满城风絮，梅子黄时雨。
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org2d68ca3" class="outline-3">
+<h3 id="org2d68ca3"><span class="section-number-3">5.37</span> 竹枝词二首·其一 刘禹锡</h3>
+<div class="outline-text-3" id="text-5-37">
+<p>
+杨柳青青江水平，闻郎江上唱歌声。
+</p>
+
+<p>
+东边日出西边雨，道是无晴却有晴。(却有晴 一作：还有晴) 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6b8bd2b" class="outline-3">
+<h3 id="org6b8bd2b"><span class="section-number-3">5.38</span> 鬓云松令·枕函香 纳兰性德</h3>
+<div class="outline-text-3" id="text-5-38">
+<p>
+枕函香，花径漏。依约相逢，絮语黄昏后。时节薄寒人病酒，刬地梨花，彻夜东风瘦。
+</p>
+
+<p>
+掩银屏，垂翠袖。何处吹箫，脉脉情微逗。肠断月明红豆蔻，月似当时，人似当时否？ 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgf510757" class="outline-3">
+<h3 id="orgf510757"><span class="section-number-3">5.39</span> 采桑子·谁翻乐府凄凉曲 纳兰性德</h3>
+<div class="outline-text-3" id="text-5-39">
+<p>
+谁翻乐府凄凉曲？风也萧萧，雨也萧萧，瘦尽灯花又一宵。
+</p>
+
+<p>
+不知何事萦怀抱，醒也无聊，醉也无聊，梦也何曾到谢桥。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8763443" class="outline-3">
+<h3 id="org8763443"><span class="section-number-3">5.40</span> 虞美人·银床淅沥青梧老 纳兰性德</h3>
+<div class="outline-text-3" id="text-5-40">
+<p>
+银床淅沥青梧老，屧粉秋蛩扫。采香行处蹙连钱，拾得翠翘何恨不能言。
+</p>
+
+<p>
+回廊一寸相思地，落月成孤倚。背灯和月就花阴，已是十年踪迹十年心。 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org49f00b1" class="outline-3">
+<h3 id="org49f00b1"><span class="section-number-3">5.41</span> 采桑子·而今才道当时错 纳兰性德</h3>
+<div class="outline-text-3" id="text-5-41">
+<p>
+而今才道当时错，心绪凄迷。红泪偷垂，满眼春风百事非。
+</p>
+
+<p>
+情知此后来无计，强说欢期。一别如斯，落尽梨花月又西。 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1127a5a" class="outline-3">
+<h3 id="org1127a5a"><span class="section-number-3">5.42</span> 浣溪沙·闺情 李清照</h3>
+<div class="outline-text-3" id="text-5-42">
+<p>
+绣面芙蓉一笑开，斜飞宝鸭衬香腮。眼波才动被人猜。
+</p>
+
+<p>
+一面风情深有韵，半笺娇恨寄幽怀。月移花影约重来。 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org5bd2dcf" class="outline-3">
+<h3 id="org5bd2dcf"><span class="section-number-3">5.43</span> 寄人 张泌</h3>
+<div class="outline-text-3" id="text-5-43">
+<p>
+别梦依依到谢家，小廊回合曲阑斜。
+</p>
+
+<p>
+多情只有春庭月，犹为离人照落花。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga375fcd" class="outline-3">
+<h3 id="orga375fcd"><span class="section-number-3">5.44</span> 有所思</h3>
+<div class="outline-text-3" id="text-5-44">
+<p>
+有所思，乃在大海南。
+</p>
+
+<p>
+何用问遗君，双珠玳瑁簪。
+</p>
+
+<p>
+用玉绍缭之。
+</p>
+
+<p>
+闻君有他心，拉杂摧烧之。
+</p>
+
+<p>
+摧烧之，当风扬其灰！
+</p>
+
+<p>
+从今以往，勿复相思，相思与君绝！
+</p>
+
+<p>
+鸡鸣狗吠，兄嫂当知之。
+</p>
+
+<p>
+妃呼狶！
+</p>
+
+<p>
+秋风肃肃晨风飔，东方须臾高知之！
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1309a09" class="outline-3">
+<h3 id="org1309a09"><span class="section-number-3">5.45</span> 古相思曲·其一</h3>
+<div class="outline-text-3" id="text-5-45">
+<p>
+君似明月我似雾，雾随月隐空留露。
+</p>
+
+<p>
+君善抚琴我善舞，曲终人离心若堵。
+</p>
+
+<p>
+只缘感君一回顾，使我思君朝与暮。
+</p>
+
+<p>
+魂随君去终不悔，绵绵相思为君苦。
+</p>
+
+<p>
+相思苦，凭谁诉？遥遥不知君何处。
+</p>
+
+<p>
+扶门切思君之嘱，登高望断天涯路。
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgcc5fe3a" class="outline-3">
+<h3 id="orgcc5fe3a"><span class="section-number-3">5.46</span> 长亭送别 王实甫</h3>
+<div class="outline-text-3" id="text-5-46">
+<p>
+　　（夫人、长老上云）今日送张生赴京，十里长亭，安排下筵席；我和长老先行，不见张生、小姐来到。（旦、末 、红同上）（旦云）今日送张生上朝取应，早是离人伤感，况值那暮秋天气，好烦恼人也呵！“悲欢聚散一杯酒，南北东西万里程。”
+</p>
+
+
+
+<p>
+　　[正宫][端正好]碧云天，黄花地，西风紧，北雁南飞。晓来谁染霜林醉？总是离人泪。
+</p>
+
+
+
+<p>
+　　[滚绣球]恨相见得迟，怨归去得疾。柳丝长玉骢难系，恨不倩疏林挂住斜晖。马儿迍迍的行，车儿快快的随，却告了相思回避，破题儿又早别离。听得道一声“去也”，松了金钏；遥望见十里长亭，减了玉肌：此恨谁知？
+</p>
+
+
+
+<p>
+　　（红云）姐姐今日怎么不打扮？（旦云）你那知我的心里呵！
+</p>
+
+
+
+<p>
+　　[叨叨令]见安排着车儿、马儿，不由人熬熬煎煎的气；有甚么心情花儿、靥儿，打扮得娇娇滴滴的媚；准备着被儿、枕儿，只索昏昏沉沉的睡；从今后衫儿、袖儿，都揾做重重叠叠的泪。兀的不闷杀人也么哥?兀的不闷杀人也么哥？久已后书儿、信儿，索与我凄凄惶惶的寄。
+</p>
+
+
+
+<p>
+　　（做到）（见夫人科）（夫人云）张生和长老坐，小姐这壁坐，红娘将酒来。张生，你向前来，是自家亲眷，不要回避。俺今日将莺莺与你，到京师休辱末了俺孩儿，挣揣一个状元回来者。（末云）小生托夫人余荫，凭着胸中之才，视官如拾芥耳。（洁云）夫人主见不差，张生不是落后的人。（把酒了，坐）（旦长吁科）
+</p>
+
+
+
+<p>
+　　[脱布衫]下西风黄叶纷飞，染寒烟衰草萋迷。酒席上斜签着坐的，蹙愁眉死临侵地。
+</p>
+
+
+
+<p>
+　　[小梁州]我见他阁泪汪汪不敢垂,恐怕人知；猛然见了把头低,长吁气,推整素罗衣。
+</p>
+
+
+
+<p>
+　　[幺篇]虽然久后成佳配，奈时间怎不悲啼。意似痴，心如醉，昨宵今日，清减了小腰围。
+</p>
+
+
+
+<p>
+　　（夫人云）小姐把盏者！（红递酒，旦把盏长吁科，云）请吃酒！
+</p>
+
+
+
+<p>
+　　[上小楼]合欢未已，离愁相继。想着俺前暮私情，昨夜成亲，今日别离。我谂知这几日相思滋味，却原来比别离情更增十倍。
+</p>
+
+
+
+<p>
+　　[幺篇]年少呵轻远别，情薄呵易弃掷。全不想腿儿相挨，脸儿相偎，手儿相携。你与俺崔相国做女婿，妻荣夫贵，但得一个并头莲，煞强如状元及第。
+</p>
+
+
+
+<p>
+　　（夫人云）红娘把盏者！（红把酒了）（旦唱）
+</p>
+
+
+
+<p>
+　　[满庭芳]供食太急，须臾对面，顷刻别离。若不是酒席间子母们当回避，有心待与他举案齐眉。虽然是厮守得一时半刻，也合着俺夫妻每共桌而食。眼底空留意，寻思起就里，险化做望夫石。
+</p>
+
+
+
+<p>
+　　（红云）姐姐不曾吃早饭，饮一口儿汤水。（旦云）红娘，甚么汤水咽得下！
+</p>
+
+
+
+<p>
+　　[快活三]将来的酒共食，尝着似土和泥。假若便是土和泥，也有些土气息，泥滋味。
+</p>
+
+
+
+<p>
+　　[朝天子]暖溶溶玉醅，白泠泠似水，多半是相思泪。眼面前茶饭怕不待要吃，恨塞满愁肠胃。“蜗角虚名，蝇头微利”，拆鸳鸯在两下里。一个这壁，一个那壁，一递一声长吁气。
+</p>
+
+
+
+<p>
+　　（夫人云）辆起车儿，俺先回去，小姐随后和红娘来。（下）（末辞洁科）（洁云）此一行别无话儿，贫僧准备买登科录看，做亲的茶饭少不得贫僧的。先生在意，鞍马上保重者！“从今经忏无心礼，专听春雷第一声。”（下）（旦唱）
+</p>
+
+
+
+<p>
+　　[四边静]霎时间杯盘狼藉，车儿投东，马儿向西，两意徘徊，落日山横翠。知他今宵宿在那里？有梦也难寻觅。
+</p>
+
+
+
+<p>
+　　（旦云）张生，此一行得官不得官，疾早便回来。（末云）小生这一去白夺一个状元，正是“青霄有路终须到，金榜无名誓不归”。（旦云）君行别无所赠，口占一绝，为君送行：“弃掷今何在，当时且自亲。还将旧来意，怜取眼前人。”（末云）小姐之意差矣，张珙更敢怜谁？谨赓一绝，以剖寸心：“人生长远别，孰与最关亲？不遇知音者，谁怜长叹人？”（旦唱）
+</p>
+
+
+
+<p>
+　　[耍孩儿]淋漓襟袖啼红泪，比司马青衫更湿。伯劳东去燕西飞，未登程先问归期。虽然眼底人千里，且尽生前酒一杯。未饮心先醉，眼中流血，心内成灰。
+</p>
+
+
+
+<p>
+　　[五煞]到京师服水土，趁程途节饮食，顺时自保揣身体。荒村雨露宜眠早，野店风霜要起迟！鞍马秋风里，最难调护，最要扶持。
+</p>
+
+
+
+<p>
+　　[四煞]这忧愁诉与谁？相思只自知，老天不管人憔悴。泪添九曲黄河溢，恨压三峰华岳低。到晚来闷把西楼倚，见了些夕阳古道，衰柳长堤。
+</p>
+
+
+
+<p>
+　　[三煞]笑吟吟一处来，哭啼啼独自归。归家若到罗帏里，昨宵个绣衾香暖留春住，今夜个翠被生寒有梦知。留恋你别无意，见据鞍上马，阁不住泪眼愁眉。
+</p>
+
+
+
+<p>
+　　（末云）有甚言语嘱付小生咱？（旦唱）
+</p>
+
+
+
+<p>
+　　[二煞]你休忧文齐福不齐，我只怕你停妻再娶妻。休要一春鱼雁无消息！我这里青鸾有信频须寄，你却休“金榜无名誓不归”。此一节君须记：若见了那异乡花草，再休似此处栖迟。
+</p>
+
+
+
+<p>
+　　（末云）再谁似小姐？小生又生此念。（旦唱）
+</p>
+
+
+
+<p>
+　　[一煞]青山隔送行，疏林不做美，淡烟暮霭相遮蔽。夕阳古道无人语，禾黍秋风听马嘶。我为甚么懒上车儿内，来时甚急，去后何迟？
+</p>
+
+
+
+<p>
+　　（红云）夫人去好一会，姐姐，咱家去！（旦唱）
+</p>
+
+
+
+<p>
+　　[收尾]四围山色中，一鞭残照里。遍人间烦恼填胸臆，量这些大小车儿如何载得起？
+</p>
+
+
+
+<p>
+　　（旦、红下）（末云）仆童赶早行一程儿，早寻个宿处。泪随流水急，愁逐野云飞。（下）
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc1262c8" class="outline-3">
+<h3 id="orgc1262c8"><span class="section-number-3">5.47</span> 洛神赋 曹植</h3>
+<div class="outline-text-3" id="text-5-47">
+<p>
+　　黄初三年，余朝京师，还济洛川。古人有言：斯水之神，名曰宓妃。感宋玉对楚王神女之事，遂作斯赋。其词曰：
+</p>
+
+
+
+<p>
+　　余从京域，言归东藩，背伊阙，越轘辕，经通谷，陵景山。日既西倾，车殆马烦。尔乃税驾乎蘅皋，秣驷乎芝田，容与乎阳林，流眄乎洛川。于是精移神骇，忽焉思散。俯则未察，仰以殊观。睹一丽人，于岩之畔。乃援御者而告之曰：“尔有觌于彼者乎？彼何人斯，若此之艳也！”御者对曰：“臣闻河洛之神，名曰宓妃。然则君王之所见，无乃是乎！其状若何？臣愿闻之。”
+</p>
+
+
+
+<p>
+　　余告之曰：其形也，翩若惊鸿，婉若游龙。荣曜秋菊，华茂春松。髣髴兮若轻云之蔽月，飘飖兮若流风之回雪。远而望之，皎若太阳升朝霞；迫而察之，灼若芙蕖出渌波。秾纤得衷，修短合度。肩若削成，腰如约素。延颈秀项，皓质呈露。芳泽无加，铅华弗御。云髻峨峨，修眉联娟。丹唇外朗，皓齿内鲜。明眸善睐，靥辅承权。瓌姿艳逸，仪静体闲。柔情绰态，媚于语言。奇服旷世，骨像应图。披罗衣之璀粲兮，珥瑶碧之华琚。戴金翠之首饰，缀明珠以耀躯。践远游之文履，曳雾绡之轻裾。微幽兰之芳蔼兮，步踟蹰于山隅。于是忽焉纵体，以遨以嬉。左倚采旄，右荫桂旗。攘皓腕于神浒兮，采湍濑之玄芝。
+</p>
+
+
+
+<p>
+　　余情悦其淑美兮，心振荡而不怡。无良媒以接欢兮，托微波而通辞。愿诚素之先达兮，解玉佩以要之。嗟佳人之信修，羌习礼而明诗。抗琼珶以和予兮，指潜渊而为期。执眷眷之款实兮，惧斯灵之我欺。感交甫之弃言兮，怅犹豫而狐疑。收和颜而静志兮，申礼防以自持。
+</p>
+
+
+
+<p>
+　　于是洛灵感焉，徙倚彷徨。神光离合，乍阴乍阳。竦轻躯以鹤立，若将飞而未翔。践椒途之郁烈，步蘅薄而流芳。超长吟以永慕兮，声哀厉而弥长。尔乃众灵杂沓，命俦啸侣。或戏清流，或翔神渚，或采明珠，或拾翠羽。从南湘之二妃，携汉滨之游女。叹匏瓜之无匹兮，咏牵牛之独处。扬轻袿之猗靡兮，翳修袖以延伫。体迅飞凫，飘忽若神。凌波微步，罗袜生尘。动无常则，若危若安；进止难期，若往若还。转眄流精，光润玉颜。含辞未吐，气若幽兰。华容婀娜，令我忘餐。
+</p>
+
+
+
+<p>
+　　于是屏翳收风，川后静波。冯夷鸣鼓，女娲清歌。腾文鱼以警乘，鸣玉銮以偕逝。六龙俨其齐首，载云车之容裔。鲸鲵踊而夹毂，水禽翔而为卫。于是越北沚，过南冈，纡素领，回清扬。动朱唇以徐言，陈交接之大纲。恨人神之道殊兮，怨盛年之莫当。抗罗袂以掩涕兮，泪流襟之浪浪。悼良会之永绝兮，哀一逝而异乡。无微情以效爱兮，献江南之明珰。虽潜处于太阴，长寄心于君王。忽不悟其所舍，怅神宵而蔽光。
+</p>
+
+
+
+<p>
+　　于是背下陵高，足往神留。遗情想像，顾望怀愁。冀灵体之复形，御轻舟而上溯。浮长川而忘反，思绵绵而增慕。夜耿耿而不寐，沾繁霜而至曙。命仆夫而就驾，吾将归乎东路。揽騑辔以抗策，怅盘桓而不能去。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org98ca276" class="outline-3">
+<h3 id="org98ca276"><span class="section-number-3">5.48</span> 和项王歌 虞姬</h3>
+<div class="outline-text-3" id="text-5-48">
+<p>
+汉兵已略地，四方楚歌声。
+</p>
+
+<p>
+大王意气尽，贱妾何聊生！ 
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="outline-container-org7d737c3" class="outline-2">
+<h2 id="org7d737c3"><span class="section-number-2">6</span> 主席诗词</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org4466363" class="outline-3">
+<h3 id="org4466363"><span class="section-number-3">6.1</span> 金猴奋起千钧棒</h3>
+</div>
+<div id="outline-container-org70677d7" class="outline-3">
+<h3 id="org70677d7"><span class="section-number-3">6.2</span> 恰同学少年</h3>
+</div>
+<div id="outline-container-orgd090351" class="outline-3">
+<h3 id="orgd090351"><span class="section-number-3">6.3</span> 湘江北去，橘子洲头</h3>
+</div>
+<div id="outline-container-org82b5c40" class="outline-3">
+<h3 id="org82b5c40"><span class="section-number-3">6.4</span> 雄关漫道真如铁，而今迈步从头越</h3>
+</div>
+<div id="outline-container-org9875b02" class="outline-3">
+<h3 id="org9875b02"><span class="section-number-3">6.5</span> 七律.长征</h3>
+</div>
+<div id="outline-container-org0daddb7" class="outline-3">
+<h3 id="org0daddb7"><span class="section-number-3">6.6</span> 数风流人物，还看今朝</h3>
+</div>
+<div id="outline-container-org35a0bb9" class="outline-3">
+<h3 id="org35a0bb9"><span class="section-number-3">6.7</span> 蚂蚁缘槐夸大国，蚍蜉撼树谈何易</h3>
+</div>
+<div id="outline-container-org72a0bb3" class="outline-3">
+<h3 id="org72a0bb3"><span class="section-number-3">6.8</span> 今日长缨在手，何时缚住苍龙</h3>
+</div>
+<div id="outline-container-orga0a10f3" class="outline-3">
+<h3 id="orga0a10f3"><span class="section-number-3">6.9</span> 一年一度秋风劲，不是春光，胜似春光，战地黄花分外香</h3>
+</div>
+<div id="outline-container-orga5456e6" class="outline-3">
+<h3 id="orga5456e6"><span class="section-number-3">6.10</span> 为有牺牲多壮志，敢叫日月换新天</h3>
+</div>
+<div id="outline-container-org949141b" class="outline-3">
+<h3 id="org949141b"><span class="section-number-3">6.11</span> 世上无难事，只要肯登攀</h3>
+</div>
+<div id="outline-container-org54a9e8c" class="outline-3">
+<h3 id="org54a9e8c"><span class="section-number-3">6.12</span> 神女应无恙，当惊世界殊</h3>
+</div>
+<div id="outline-container-orgc3715fb" class="outline-3">
+<h3 id="orgc3715fb"><span class="section-number-3">6.13</span> 牢骚太盛防肠断，风物长宜放眼量</h3>
+</div>
+<div id="outline-container-org7b3a66e" class="outline-3">
+<h3 id="org7b3a66e"><span class="section-number-3">6.14</span> 天若有情天亦老，人间正道是沧桑</h3>
+</div>
+<div id="outline-container-org62b0adb" class="outline-3">
+<h3 id="org62b0adb"><span class="section-number-3">6.15</span> 中华儿女多奇志，不爱红装爱武装</h3>
+</div>
+</div>
+<div id="outline-container-orgb5737b8" class="outline-2">
+<h2 id="orgb5737b8"><span class="section-number-2">7</span> 离骚 屈原，帝高阳之苗裔兮</h2>
+</div>
+<div id="outline-container-org0180d9c" class="outline-2">
+<h2 id="org0180d9c"><span class="section-number-2">8</span> 逍遥游庄子</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+子非鱼，安知鱼之乐
+买椟还珠
+掩耳盗铃
+守株待兔
+庄周梦蝶
+</p>
+</div>
+</div>
+<div id="outline-container-org0aca0a7" class="outline-2">
+<h2 id="org0aca0a7"><span class="section-number-2">9</span> 诗经</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+硕鼠硕鼠，无食我黍
+蒹葭苍苍，白露为霜
+窈窕淑女，君子好逑，求之不得
+投我以木桃，报之以琼瑶，匪报也，永以为好也
+</p>
+</div>
+</div>
+<div id="outline-container-orgd9bf191" class="outline-2">
+<h2 id="orgd9bf191"><span class="section-number-2">10</span> 吾善养吾浩然之气</h2>
+</div>
+<div id="outline-container-orgf2939a7" class="outline-2">
+<h2 id="orgf2939a7"><span class="section-number-2">11</span> 青出于蓝而青于蓝，冰水为之而寒于水</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+天行有常，不为尧舜
+</p>
+</div>
+</div>
+<div id="outline-container-orgbd67fa0" class="outline-2">
+<h2 id="orgbd67fa0"><span class="section-number-2">12</span> 孙子兵法 孙武</h2>
+</div>
+<div id="outline-container-org830f006" class="outline-2">
+<h2 id="org830f006"><span class="section-number-2">13</span> 史记司马迁</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+文王拘而演周易，仲尼厄而作春秋，左丘失明厥有国语，韩非囚秦世传吕览
+</p>
+</div>
+</div>
+<div id="outline-container-org8693fe9" class="outline-2">
+<h2 id="org8693fe9"><span class="section-number-2">14</span> 淮南子塞翁失马</h2>
+</div>
+<div id="outline-container-orgd6749a3" class="outline-2">
+<h2 id="orgd6749a3"><span class="section-number-2">15</span> 战国策</h2>
+</div>
+<div id="outline-container-org67d054a" class="outline-2">
+<h2 id="org67d054a"><span class="section-number-2">16</span> 过秦论贾谊</h2>
+</div>
+<div id="outline-container-orgf5a9b53" class="outline-2">
+<h2 id="orgf5a9b53"><span class="section-number-2">17</span> 吕氏春秋</h2>
+</div>
+<div id="outline-container-org8aeaf95" class="outline-2">
+<h2 id="org8aeaf95"><span class="section-number-2">18</span> 郑伯克段于焉</h2>
+</div>
+<div id="outline-container-org615e781" class="outline-2">
+<h2 id="org615e781"><span class="section-number-2">19</span> 罄南山之竹书罪无穷，绝东海之波流恶难尽</h2>
+</div>
+<div id="outline-container-org5b777dc" class="outline-2">
+<h2 id="org5b777dc"><span class="section-number-2">20</span> 大风歌大风起兮云飞扬</h2>
+</div>
+<div id="outline-container-org1e25e55" class="outline-2">
+<h2 id="org1e25e55"><span class="section-number-2">21</span> 孔雀东南飞，五里一徘徊</h2>
+</div>
+<div id="outline-container-orga7d4be2" class="outline-2">
+<h2 id="orga7d4be2"><span class="section-number-2">22</span> 力拔山兮气盖世</h2>
+</div>
+<div id="outline-container-orge69000b" class="outline-2">
+<h2 id="orge69000b"><span class="section-number-2">23</span> 终南阴岭秀</h2>
+</div>
+<div id="outline-container-org42d310f" class="outline-2">
+<h2 id="org42d310f"><span class="section-number-2">24</span> 将军百战死，壮士十年归</h2>
+</div>
+<div id="outline-container-org6562a23" class="outline-2">
+<h2 id="org6562a23"><span class="section-number-2">25</span> 短歌行曹操对酒当歌，人生几何</h2>
+</div>
+<div id="outline-container-orgb365b1d" class="outline-2">
+<h2 id="orgb365b1d"><span class="section-number-2">26</span> 神龟虽寿，犹有竟时</h2>
+</div>
+<div id="outline-container-orgc918c77" class="outline-2">
+<h2 id="orgc918c77"><span class="section-number-2">27</span> 东临碣石，以观沧海水何澹澹山岛耸峙</h2>
+</div>
+<div id="outline-container-org3a41dfa" class="outline-2">
+<h2 id="org3a41dfa"><span class="section-number-2">28</span> 白骨露于野，千里无鸡鸣</h2>
+</div>
+<div id="outline-container-org0dc3068" class="outline-2">
+<h2 id="org0dc3068"><span class="section-number-2">29</span> 捐躯赴国难，视死忽如归</h2>
+</div>
+<div id="outline-container-org2988782" class="outline-2">
+<h2 id="org2988782"><span class="section-number-2">30</span> 洛神赋</h2>
+</div>
+<div id="outline-container-org9e9ca90" class="outline-2">
+<h2 id="org9e9ca90"><span class="section-number-2">31</span> 煮豆燃豆萁，豆在釜中泣</h2>
+</div>
+<div id="outline-container-orgb1324b6" class="outline-2">
+<h2 id="orgb1324b6"><span class="section-number-2">32</span> 明月皎皎照我床，星汉西流夜未央</h2>
+</div>
+<div id="outline-container-orgd4e160b" class="outline-2">
+<h2 id="orgd4e160b"><span class="section-number-2">33</span> 出师表诸葛亮</h2>
+</div>
+<div id="outline-container-org3194aea" class="outline-2">
+<h2 id="org3194aea"><span class="section-number-2">34</span> 后出师表诸葛亮</h2>
+</div>
+<div id="outline-container-org8af82d4" class="outline-2">
+<h2 id="org8af82d4"><span class="section-number-2">35</span> 诫子书诸葛亮</h2>
+</div>
+<div id="outline-container-org7391d67" class="outline-2">
+<h2 id="org7391d67"><span class="section-number-2">36</span> 兰亭集序王羲之</h2>
+</div>
+<div id="outline-container-org349fcff" class="outline-2">
+<h2 id="org349fcff"><span class="section-number-2">37</span> 陶渊明五柳先生传</h2>
+<div class="outline-text-2" id="text-37">
+<p>
+少无世俗韵
+采菊东篱下，悠然见南山
+种豆南山下，草盛豆苗稀
+</p>
+</div>
+</div>
+<div id="outline-container-org7f7ba64" class="outline-2">
+<h2 id="org7f7ba64"><span class="section-number-2">38</span> 爱莲说周敦颐</h2>
+</div>
+<div id="outline-container-org7410e37" class="outline-2">
+<h2 id="org7410e37"><span class="section-number-2">39</span> 初唐四杰陈子昂，王勃，骆宾王，卢照邻</h2>
+<div class="outline-text-2" id="text-39">
+<p>
+登幽州台歌
+从军行杨炯
+鹅鹅鹅，曲颈向天歌
+海内存知己，天涯若比邻
+滕王阁王勃
+此地别燕丹，壮士发冲冠
+</p>
+</div>
+</div>
+
+<div id="outline-container-org15c0c46" class="outline-2">
+<h2 id="org15c0c46"><span class="section-number-2">40</span> 张九龄 海上生明月，天涯共此时</h2>
+</div>
+<div id="outline-container-org5238a77" class="outline-2">
+<h2 id="org5238a77"><span class="section-number-2">41</span> 长安一片月，万户捣衣声</h2>
+</div>
+<div id="outline-container-org83e017e" class="outline-2">
+<h2 id="org83e017e"><span class="section-number-2">42</span> 孟浩然</h2>
+<div class="outline-text-2" id="text-42">
+<p>
+春眠不觉晓，处处闻啼鸟
+人事有代谢，往来成古今
+春风得意马蹄疾，一日看尽长安花
+</p>
+</div>
+</div>
+<div id="outline-container-org867c9fd" class="outline-2">
+<h2 id="org867c9fd"><span class="section-number-2">43</span> 王维</h2>
+<div class="outline-text-2" id="text-43">
+<p>
+独坐幽篁里，弹琴复长啸
+遥知兄弟登高处，遍插茱萸少一人
+停车坐爱枫林晚，霜叶红于二月花
+</p>
+</div>
+</div>
+<div id="outline-container-org75ece29" class="outline-2">
+<h2 id="org75ece29"><span class="section-number-2">44</span> 游子吟孟郊</h2>
+</div>
+<div id="outline-container-org001168e" class="outline-2">
+<h2 id="org001168e"><span class="section-number-2">45</span> 代悲白头翁 刘希夷</h2>
+</div>
+<div id="outline-container-orgfcf8058" class="outline-2">
+<h2 id="orgfcf8058"><span class="section-number-2">46</span> 春江花月夜 张若虚</h2>
+</div>
+<div id="outline-container-org91e49e2" class="outline-2">
+<h2 id="org91e49e2"><span class="section-number-2">47</span> 访隐者不遇贾岛</h2>
+</div>
+<div id="outline-container-orgb498ded" class="outline-2">
+<h2 id="orgb498ded"><span class="section-number-2">48</span> 刘禹锡</h2>
+<div class="outline-text-2" id="text-48">
+<p>
+唯有牡丹真国色，花开时节动京城
+王浚楼船下益州，金陵王气黯然收
+夜深还过女墙来
+</p>
+</div>
+</div>
+<div id="outline-container-orgb3e2f6d" class="outline-2">
+<h2 id="orgb3e2f6d"><span class="section-number-2">49</span> 静夜思李白</h2>
+<div class="outline-text-2" id="text-49">
+<p>
+梦游天姥吟留别，
+将进酒，
+白发三千丈，
+日照香炉生紫烟，
+孤帆远影碧空尽，唯见长江天际流，
+桃花潭水深千尺，不及汪伦赠我情，
+弃我去者，昨日之日不可留。乱我心者，今日之日多烦忧
+开轩面场圃，把酒话桑麻
+月既不解饮，影徒随我身。暂伴月将影，行乐须及春。
+</p>
+</div>
+</div>
+<div id="outline-container-org3076e63" class="outline-2">
+<h2 id="org3076e63"><span class="section-number-2">50</span> 杜甫</h2>
+<div class="outline-text-2" id="text-50">
+<p>
+两个黄鹂鸣翠柳，一行白鹭上青天
+无边落木萧萧下，不尽长江滚滚来
+牵衣顿足拦道哭，哭声直上干云霄
+好雨知时节，当春乃发生。随风潜入夜，润物细无声
+生长明妃尚有村
+花径不曾缘客扫，蓬门今始为君开
+岂有文章惊海内，曼劳车马驻江干
+飘飘何所似，天地一沙鸥
+岱宗夫如何，齐鲁青未了
+闻官军收河南河北
+安得广厦千万间，大庇天下寒士俱欢颜，风雨不动安如山
+暮投石壕村，有吏夜捉人
+吾爱孟夫子，风流天下闻
+林暗草惊风，将军夜引弓，平明寻白羽，墨在石棱中
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc66a92f" class="outline-2">
+<h2 id="orgc66a92f"><span class="section-number-2">51</span> 岑参</h2>
+<div class="outline-text-2" id="text-51">
+<p>
+故园东望路漫漫，双秀龙钟泪不干
+忽如一夜春风来，千树万树梨花开
+</p>
+</div>
+</div>
+<div id="outline-container-orgc044d9b" class="outline-2">
+<h2 id="orgc044d9b"><span class="section-number-2">52</span> 贾岛</h2>
+<div class="outline-text-2" id="text-52">
+<p>
+访隐者不遇 贾岛 松下问童子
+</p>
+</div>
+</div>
+<div id="outline-container-orgf4ae54d" class="outline-2">
+<h2 id="orgf4ae54d"><span class="section-number-2">53</span> 青海长云暗雪山，孤城遥望玉门关</h2>
+<div class="outline-text-2" id="text-53">
+<p>
+倘使龙城飞将在，不教胡马度阴山
+汉家烟尘在东北
+</p>
+</div>
+</div>
+<div id="outline-container-orgf97a922" class="outline-2">
+<h2 id="orgf97a922"><span class="section-number-2">54</span> 李商隐杜牧</h2>
+<div class="outline-text-2" id="text-54">
+<p>
+无题
+巴山夜雨涨秋池
+不知腐鼠成滋味
+心有灵犀一点通
+青山隐隐水迢迢，秋尽江南草未凋
+东风不与周郎便，同学转身锁二桥
+十年一觉扬州梦，赢得青楼薄性名
+春风十里扬州路，卷上珠帘总不如
+</p>
+</div>
+</div>
+
+<div id="outline-container-org829bf94" class="outline-2">
+<h2 id="org829bf94"><span class="section-number-2">55</span> 李贺</h2>
+<div class="outline-text-2" id="text-55">
+<p>
+黑云压城城欲摧，甲光向日金鳞开
+昆仑玉碎凤凰叫，芙蓉泣露香兰笑。
+</p>
+</div>
+</div>
+<div id="outline-container-org898433d" class="outline-2">
+<h2 id="org898433d"><span class="section-number-2">56</span> 周敦颐 爱莲说</h2>
+</div>
+<div id="outline-container-org2ceae24" class="outline-2">
+<h2 id="org2ceae24"><span class="section-number-2">57</span> 长笛一声人倚楼</h2>
+</div>
+<div id="outline-container-org59b28cb" class="outline-2">
+<h2 id="org59b28cb"><span class="section-number-2">58</span> 白居易</h2>
+<div class="outline-text-2" id="text-58">
+<p>
+长恨歌 琵琶行
+观刈麦 
+</p>
+</div>
+</div>
+<div id="outline-container-orgb5dd2b3" class="outline-2">
+<h2 id="orgb5dd2b3"><span class="section-number-2">59</span> 元稹</h2>
+<div class="outline-text-2" id="text-59">
+<p>
+曾经沧海难为水，除却巫山不是云。
+取次花丛懒回顾，半缘修道半缘君。
+</p>
+</div>
+</div>
+<div id="outline-container-org10afe8d" class="outline-2">
+<h2 id="org10afe8d"><span class="section-number-2">60</span> 韩愈</h2>
+</div>
+
+<div id="outline-container-orgb00b449" class="outline-2">
+<h2 id="orgb00b449"><span class="section-number-2">61</span> 冯延巳</h2>
+<div class="outline-text-2" id="text-61">
+<p>
+风乍起，吹皱一池春水。
+</p>
+</div>
+</div>
+<div id="outline-container-org00fa822" class="outline-2">
+<h2 id="org00fa822"><span class="section-number-2">62</span> 李煜</h2>
+</div>
+<div id="outline-container-org809337a" class="outline-2">
+<h2 id="org809337a"><span class="section-number-2">63</span> 欧阳修</h2>
+</div>
+<div id="outline-container-orga4262d5" class="outline-2">
+<h2 id="orga4262d5"><span class="section-number-2">64</span> 王安石</h2>
+</div>
+<div id="outline-container-orgf745298" class="outline-2">
+<h2 id="orgf745298"><span class="section-number-2">65</span> 二晏</h2>
+</div>
+<div id="outline-container-org065bf4d" class="outline-2">
+<h2 id="org065bf4d"><span class="section-number-2">66</span> 贺铸</h2>
+</div>
+<div id="outline-container-org9a97ab9" class="outline-2">
+<h2 id="org9a97ab9"><span class="section-number-2">67</span> 柳永</h2>
+</div>
+<div id="outline-container-orgc245a13" class="outline-2">
+<h2 id="orgc245a13"><span class="section-number-2">68</span> 三苏</h2>
+</div>
+<div id="outline-container-org611f9ea" class="outline-2">
+<h2 id="org611f9ea"><span class="section-number-2">69</span> 岳飞</h2>
+</div>
+<div id="outline-container-org8e841f6" class="outline-2">
+<h2 id="org8e841f6"><span class="section-number-2">70</span> 辛弃疾</h2>
+<div class="outline-text-2" id="text-70">
+<p>
+长门事，准拟佳期又误。峨眉曾有人妒。
+</p>
+</div>
+</div>
+<div id="outline-container-orgd18cbcc" class="outline-2">
+<h2 id="orgd18cbcc"><span class="section-number-2">71</span> 李清照</h2>
+</div>
+<div id="outline-container-org111d171" class="outline-2">
+<h2 id="org111d171"><span class="section-number-2">72</span> 周邦彦</h2>
+<div class="outline-text-2" id="text-72">
+<p>
+故乡遥，何日去，家住吴门久作长安旅。
+</p>
+</div>
+</div>
+<div id="outline-container-org156c365" class="outline-2">
+<h2 id="org156c365"><span class="section-number-2">73</span> 姜夔</h2>
+</div>
+<div id="outline-container-org31a322a" class="outline-2">
+<h2 id="org31a322a"><span class="section-number-2">74</span> 陆游</h2>
+</div>
+<div id="outline-container-orgaeabe2e" class="outline-2">
+<h2 id="orgaeabe2e"><span class="section-number-2">75</span> 秦观</h2>
+<div class="outline-text-2" id="text-75">
+</div>
+<div id="outline-container-org4cc1d1e" class="outline-3">
+<h3 id="org4cc1d1e"><span class="section-number-3">75.1</span> 鹊桥仙</h3>
+</div>
+<div id="outline-container-org3fff2e8" class="outline-3">
+<h3 id="org3fff2e8"><span class="section-number-3">75.2</span> 减字木兰花·天涯旧恨</h3>
+<div class="outline-text-3" id="text-75-2">
+<p>
+天涯旧恨，独自凄凉人不问。欲见回肠，断尽金炉小篆香。
+黛蛾长敛，任是春风吹不展。困倚危楼，过尽飞鸿字字愁。 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7d2c67c" class="outline-2">
+<h2 id="org7d2c67c"><span class="section-number-2">76</span> 黄庭坚</h2>
+</div>
+<div id="outline-container-org8adb503" class="outline-2">
+<h2 id="org8adb503"><span class="section-number-2">77</span> 范成大</h2>
+</div>
+<div id="outline-container-org1038958" class="outline-2">
+<h2 id="org1038958"><span class="section-number-2">78</span> 范仲淹</h2>
+</div>
+<div id="outline-container-org8b5a4c7" class="outline-2">
+<h2 id="org8b5a4c7"><span class="section-number-2">79</span> 柳永</h2>
+</div>
+<div id="outline-container-org4d31c2a" class="outline-2">
+<h2 id="org4d31c2a"><span class="section-number-2">80</span> 张先</h2>
+</div>
+<div id="outline-container-orgf0fff40" class="outline-2">
+<h2 id="orgf0fff40"><span class="section-number-2">81</span> 文天祥</h2>
+</div>
+<div id="outline-container-org33ec105" class="outline-2">
+<h2 id="org33ec105"><span class="section-number-2">82</span> 张养浩</h2>
+<div class="outline-text-2" id="text-82">
+<p>
+兴百姓苦，亡百姓苦。
+</p>
+</div>
+</div>
+<div id="outline-container-org6e88748" class="outline-2">
+<h2 id="org6e88748"><span class="section-number-2">83</span> 马致远</h2>
+<div class="outline-text-2" id="text-83">
+<p>
+天净沙秋思马致远
+枯藤老树昏鸦，小桥流水人家，古道西风瘦马，夕阳西下断肠人在天涯。
+</p>
+</div>
+</div>
+<div id="outline-container-orgb1dc0d5" class="outline-2">
+<h2 id="orgb1dc0d5"><span class="section-number-2">84</span> 元好问</h2>
+</div>
+<div id="outline-container-org89b0468" class="outline-2">
+<h2 id="org89b0468"><span class="section-number-2">85</span> 于谦</h2>
+</div>
+<div id="outline-container-org5b228ed" class="outline-2">
+<h2 id="org5b228ed"><span class="section-number-2">86</span> 唐伯虎</h2>
+<div class="outline-text-2" id="text-86">
+<p>
+桃花仙人种桃树，
+</p>
+</div>
+</div>
+<div id="outline-container-org8e5e998" class="outline-2">
+<h2 id="org8e5e998"><span class="section-number-2">87</span> 邓板桥</h2>
+<div class="outline-text-2" id="text-87">
+<p>
+疑是民间疾苦声
+</p>
+</div>
+</div>
+<div id="outline-container-org140d6da" class="outline-2">
+<h2 id="org140d6da"><span class="section-number-2">88</span> 纳兰容若</h2>
+</div>
+<div id="outline-container-org4882a3b" class="outline-2">
+<h2 id="org4882a3b"><span class="section-number-2">89</span> 龚自珍</h2>
+</div>
+<div id="outline-container-org3e69d43" class="outline-2">
+<h2 id="org3e69d43"><span class="section-number-2">90</span> 鲁迅</h2>
+</div>
+<div id="outline-container-org3cc7eec" class="outline-2">
+<h2 id="org3cc7eec"><span class="section-number-2">91</span> 袁枚</h2>
+</div>
+<div id="outline-container-org4b35941" class="outline-2">
+<h2 id="org4b35941"><span class="section-number-2">92</span> 梁启超</h2>
+</div>
+<div id="outline-container-org9643f3d" class="outline-2">
+<h2 id="org9643f3d"><span class="section-number-2">93</span> 最是人间留不住，朱颜辞镜花辞树</h2>
+</div>
+<div id="outline-container-org470dbd5" class="outline-2">
+<h2 id="org470dbd5"><span class="section-number-2">94</span> 陈毅</h2>
+<div class="outline-text-2" id="text-94">
+<p>
+此去泉台招旧部，旌旗十万斩阎罗。
+</p>
+</div>
+</div>
+<div id="outline-container-org556d60f" class="outline-2">
+<h2 id="org556d60f"><span class="section-number-2">95</span> 还君明珠双泪垂，恨不相逢未嫁时</h2>
+</div>
+<div id="outline-container-org015457e" class="outline-2">
+<h2 id="org015457e"><span class="section-number-2">96</span> 书卷多情似故人，晨昏忧乐每相亲</h2>
+</div>
+<div id="outline-container-org83435a5" class="outline-2">
+<h2 id="org83435a5"><span class="section-number-2">97</span> 苦恨年年压金线，为他人作嫁衣裳</h2>
+</div>
+<div id="outline-container-org1c71ff0" class="outline-2">
+<h2 id="org1c71ff0"><span class="section-number-2">98</span> 水经注 郦道元</h2>
+</div>
+<div id="outline-container-org8cc8448" class="outline-2">
+<h2 id="org8cc8448"><span class="section-number-2">99</span> 与朱元思书</h2>
+<div class="outline-text-2" id="text-99">
+<p>
+秋声赋 醉翁亭记 伶官传序 前后赤壁赋 游褒禅山记 
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: inwins</p>
+<p class="date">Created: 2020-04-03 五 21:22</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
