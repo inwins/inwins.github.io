@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-05-25 一 00:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>读书方法</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="inwins" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">读书方法</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org8b0f479">1. 选书</a></li>
+<li><a href="#org5112877">2. 概读</a></li>
+<li><a href="#org1ada36a">3. 跳读</a></li>
+<li><a href="#org0d7bbf9">4. 博览</a></li>
+<li><a href="#orgc62b873">5. 精读</a></li>
+<li><a href="#orgd108b8e">6. 温习考察</a></li>
+<li><a href="#orgf815ef3">7. 自我管理</a></li>
+</ul>
+</div>
+</div>
+<p>
+读书方法分为选书，概读，跳读，博览，精读，温习考察，自我管理几个部分，这几个部分可以按照需要随意的组织：
+</p>
+<div id="outline-container-org8b0f479" class="outline-2">
+<h2 id="org8b0f479"><span class="section-number-2">1</span> 选书</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+我们要找到适合自己的书才能事半功倍的进行学习，准备读书时一定要考虑下面两点。
+首先，书籍要适合自己的水平，书籍不能过分超越自己的水平，完全无法读得下去的书籍是不能获取知识的，但也不能选择完全没有难度的书籍，这样的书籍一般不会有的收获。人需要略超过自己水平的书籍，每次都能学到新的知识，但也不至于啃不动。
+其次要注意书籍的质量，一般来说经典的原著是最好的学习资料。因为经典的原著是久经考验的，学习这些书籍能够了解一个事物的起源，发展和成熟，而不会陷入迷雾中。他能帮助一个人构建完善的知识体系和基础原则。而其他书籍往往并不能如此的全面深入可靠。
+</p>
+</div>
+</div>
+<div id="outline-container-org5112877" class="outline-2">
+<h2 id="org5112877"><span class="section-number-2">2</span> 概读</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+在读书之前，我们需要对整本书有足够的了解。需要对书籍的组织结构有一定的了解，需要准备一些你需要解决的问题，这些问题是可以从书中找到答案的。我们要读一下书籍的前言，后序目录等内容，知道书籍中解决了什么问题，书籍是怎么组织的，有哪些要点，哪些是我们需要的，有了这些读书就有了目的，后面读书就要解决这些问题，这样读书就不会不动脑子，不会不知道自己为何而读书。
+</p>
+</div>
+</div>
+<div id="outline-container-org1ada36a" class="outline-2">
+<h2 id="org1ada36a"><span class="section-number-2">3</span> 跳读</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+对于有一定了解的内容，我们不一定需要从头开始。我们也可以从我们的需要出发，有选择的跳读。但是注意，跳读既需要有一定的只是作为基础，也需要有明确的学习目标，否则是不能进行跳读的。跳读的优点在于节约时间，可以集中注意学习更重要的内容，但是如果没有基础跳读完全读不懂的内容，就成了浪费时间。
+</p>
+</div>
+</div>
+<div id="outline-container-org0d7bbf9" class="outline-2">
+<h2 id="org0d7bbf9"><span class="section-number-2">4</span> 博览</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+博览是开阔一个人视野的重要方法，博览群书，能为自己的知识体系增加无数的点缀。如果想要自己的语言有说服力，有文学素养，有历史，能旁征博引那就必须要多读书。否则一个视野狭窄的，鼠目寸光的人怎么能够写出高质量的内容。
+</p>
+</div>
+</div>
+<div id="outline-container-orgc62b873" class="outline-2">
+<h2 id="orgc62b873"><span class="section-number-2">5</span> 精读</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+精读是最重要的读书方法，是深入书籍的最重要的方法。精读要求是多读，多想，多总结，多问。对于一些内容要反复的读，思考其中的要点，反复的总结，反复的提出问题并解答。精读就是不断把书上的深邃的内容一点点的转化为自己的语言，自己的思考，自己的用法。需要注意的是，只读一遍不能算精读，不动脑子思考不能算精读，没有总结不能算是精读，没有自己的想法不能算是精读成功了。精读也可以采用一些辅助手段，比如抄写，背诵，做题目等，这些能够提高精读的专注程度，提高精读的效果。
+</p>
+</div>
+</div>
+<div id="outline-container-orgd108b8e" class="outline-2">
+<h2 id="orgd108b8e"><span class="section-number-2">6</span> 温习考察</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+读书要定时温习，不要读完就万事大吉，要把复习放到和学习同样重要的位置上来。读书最重要的不是学习别人的知识，而是把别人的知识是融入自己的知识体系，如果一段知识，只是读了而没有温习很快就会模糊，如果长时间不温习，很快就和没有读过一样了。另外读书要记得考察自己，做题目，背诵，默写，回忆都是考察自己的好办法，比如数学物理等就可以把所有的习题都完成。
+</p>
+</div>
+</div>
+<div id="outline-container-orgf815ef3" class="outline-2">
+<h2 id="orgf815ef3"><span class="section-number-2">7</span> 自我管理</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+有了这些方法，读书最重要的是专注，勤奋，适合自己。读书要有计划，按计划有序的完成学习新知识，温习旧知识，整理自己的知识体系，专注的学习，温习，整理，时间被充分的利用。持续不断的的坚持努力就一定会有好的收获。自我管理要注意自己的感受，不要太在意与外界的比较，要注意适合自己的才是最好的，适合自己才能长久的坚持下去，不要硬逼自己挑战难以完成的事情，那样并不会一步登天。
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: inwins</p>
+<p class="date">Created: 2020-05-25 一 00:59</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
